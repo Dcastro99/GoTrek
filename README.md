@@ -16,6 +16,8 @@
 
 ---
 
+## Wireframe
+
 [Wireframe](https://miro.com/app/board/uXjVPVvwtEE=/)
 
 ![wireframe](https://user-images.githubusercontent.com/107226923/191168990-d9b55b25-9c3b-45ef-8ca3-d519c76cbc4b.PNG)
