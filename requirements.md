@@ -54,9 +54,16 @@ We are going to aim for the user to be able to search `Biking, Running, and walk
 - a user can leave a review and photo of trails trekked
 - a user can favorite a trail.
 
-When a user first gets to GoTrek the will land on the landing page that will display the web apps bio, pictures of trails and also allow the user to signup/signin. Once logged in the user will be in their profile and
-Non-Functional Requirements (301 & 401 only)
+When a user first gets to GoTrek the will land on the landing page that will display the web apps bio, pictures of trails and also allow the user to signup/signin. Once logged in the user will be in their profile and will able to search new trails, see post made by them, and have a map display the trails searched. If the user chooses a trail this will lead them to another page where it will be a sigle trail view. Here the will be able to see the current weather, see details about the trail, reviews, and they will be able to favorite the trail if they so choose. Also they will be able to see near by trails on the side of the page.
+
+## Non-Functional Requirements (301 & 401 only)
+
 Non-functional requirements are requirements that are not directly related to the functionality of the application but still important to the app.
+
+This web app will include:
+
+- Auth0 for security
+- SocketIO for creating rooms/chat
 
 Examples include:
 
