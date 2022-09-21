@@ -1,8 +1,8 @@
 import React from 'react';
-import './realEstateCardPrice.css';
+import './trailCardButton.css';
 
-const RealEstateCardPrice = () => {
+const trailCardButton = () => {
   return <div></div>;
 };
 
-export default RealEstateCardPrice;
+export default trailCardButton;

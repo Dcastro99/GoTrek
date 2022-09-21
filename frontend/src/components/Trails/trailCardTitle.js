@@ -1,8 +1,8 @@
 import React from 'react';
-import './realEstateCardTitle.css';
+import './trailCardTitle.css';
 
-const RealEstateCardTitle = () => {
+const trailCardTitle = () => {
   return <div></div>;
 };
 
-export default RealEstateCardTitle;
+export default trailCardTitle;
