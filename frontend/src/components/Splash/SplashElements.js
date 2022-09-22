@@ -5,5 +5,5 @@ export const SplashContainer = styled.div`
     justify-content: center;
     align-items: center;
     height: 80vh;
-    background-color: lightblue;
+    background-color: #B9BFA4;
 `;
