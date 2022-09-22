@@ -7,5 +7,5 @@ export const NavbarContainer = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    background-color: lightgreen;
+    background-color: #44733D;
 `;
