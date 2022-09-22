@@ -11,11 +11,11 @@ export default function ReviewTrails() {
       case 0:
         return "Evaluate";
       case 1:
-        return "Dissatifation";
+        return "Very Dissatisfied";
       case 2:
-        return "Unsatisfied";
+        return "Dissatisfied";
       case 3:
-        return "Normal";
+        return "Neutral";
       case 4:
         return "Satisfied";
       case 5:
