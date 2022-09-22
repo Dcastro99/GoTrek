@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const SplashContainer = styled.div`
     height: 80vh;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -25,4 +26,7 @@ export const TrailsNearbyContainer = styled.div`
     align-items: center;
     justify-content: center;
     border: 2px solid black;
+=======
+    background-color: #B9BFA4;
+>>>>>>> dev
 `;

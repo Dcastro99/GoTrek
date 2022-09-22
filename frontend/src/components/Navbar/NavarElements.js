@@ -8,6 +8,7 @@ export const NavbarContainer = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+<<<<<<< HEAD
     background-color: lightgreen;
 `;
 
@@ -52,4 +53,7 @@ export const NavSignup = styled.div`
     justify-content: center;
     align-items: center;
     border: 2px solid black;
+=======
+    background-color: #44733D;
+>>>>>>> dev
 `;

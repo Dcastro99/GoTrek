@@ -8,7 +8,7 @@ export const FooterContainer = styled.footer`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    background-color: lightgreen;
+    background-color: #44733D;
     
 
 `;
