@@ -1,6 +1,7 @@
 import "./ReviewTrails.css";
 import { useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+//Idea from https://react-icons.github.io/react-icons/icons?name=ai
 
 export default function ReviewTrails() {
   const [number, setNumber] = useState(0);
@@ -42,13 +43,13 @@ export default function ReviewTrails() {
   };
   return (
     <div className="review">
-      <div className="popup">
+      <div className="position">
         <div className="content">
           <div className="trail">
             <img
               style={{ width: 60, height: 60, objectFit: "cover" }}
               src="https://www.pexels.com/photo/person-waking-on-hill-554609/"
-              alt="name"
+              alt="Trail Pic"
             />
             <h1>Go Trek Trails</h1>
           </div>
