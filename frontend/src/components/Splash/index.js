@@ -1,10 +1,17 @@
-import React from 'react'
-import { SplashContainer } from './SplashElements';
+import React, { useState } from 'react'
+
+import { SplashContainer, CarouselContainer, TrailsNearbyContainer } from './SplashElements';
 
 function Splash() {
+  
   return (
     <SplashContainer>
-        <h1>Splash Page</h1>
+      <CarouselContainer>
+        <h2>Carousel</h2>
+      </CarouselContainer>
+      <TrailsNearbyContainer>
+        <h2>Trails Nearby</h2>
+      </TrailsNearbyContainer>
     </SplashContainer>
   )
 }
