@@ -5,7 +5,7 @@ import Carousel from '../Carousel';
 import TrailCards from '../TrailCards';
 
 function Splash() {
-  
+
   return (
     <SplashContainer>
       <CarouselContainer>
