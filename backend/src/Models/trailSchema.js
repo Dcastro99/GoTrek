@@ -8,7 +8,7 @@ const trailSchema = new Schema({
   trailName: String,
   location: String,
   type: String,
-  class: Number,
+  class: String,
   length: String,
   elevationGain: String,
 

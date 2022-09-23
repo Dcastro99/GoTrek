@@ -11,7 +11,7 @@ const seed = async () => {
     trailName: 'Rattle Snake Ridge',
     location: 'Tacoma, WA',
     type: 'hike',
-    class: 4,
+    class: '4',
     length: '5.3 Miles',
     elevationGain: '2,000ft'
   });
@@ -19,7 +19,7 @@ const seed = async () => {
     trailName: 'MailBox Peak',
     location: 'North Bend, WA',
     type: 'hike',
-    class: 4,
+    class: '4',
     length: '9.4 Miles',
     elevationGain: '4822ft'
   });
@@ -28,12 +28,39 @@ const seed = async () => {
     trailName: 'Twin Falls',
     location: '47600 SE 159th StNorth Bend, WA 98045',
     type: 'hike',
-    class: 3,
+    class: '3',
     length: '2.5 Miles',
     elevationGain: '636ft'
   });
   console.log('This trail is not to difficult!');
-
+  await Trail.create({
+    trailName: 'Cape Final',
+    location: 'Marble Canyon, AZ 86022',
+    type: 'hike',
+    class: '3',
+    length: '4.0 Miles',
+    elevationGain: '495ft'
+  });
+  console.log('Beautiful trail!');
+  await Trail.create({
+    trailName: 'Alum Cave Trail to Mount LeConte',
+    location: 'Gatlinburg, TN 37738',
+    type: 'backpacking',
+    class: 'Hard',
+    length: '11.0 Miles',
+    elevationGain: '3,061ft'
+  });
+  console.log('Great place to get away!');
+  // #6 - Lost Lake via Hessie Trail
+  await Trail.create({
+    trailName: 'Lost Lake via Hessie Trail',
+    location: 'Hassie Rd Nederland, CO 80466',
+    type: 'backpacking',
+    class: 'Medium',
+    length: '4.0 Miles',
+    elevationGain: '830ft'
+  });
+  console.log('Nice trek!');
 
 
 
