@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 
 import { SplashContainer, CarouselContainer, TrailsNearbyContainer } from './SplashElements';
+import Carousel from '../Carousel';
+import TrailCards from '../TrailCards';
 
 function Splash() {
   
   return (
     <SplashContainer>
       <CarouselContainer>
-        <h2>Carousel</h2>
+        <Carousel />
       </CarouselContainer>
       <TrailsNearbyContainer>
-        <h2>Trails Nearby</h2>
+        <TrailCards />
       </TrailsNearbyContainer>
     </SplashContainer>
   )

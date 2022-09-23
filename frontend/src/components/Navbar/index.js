@@ -1,17 +1,25 @@
 import React from 'react'
-import { NavbarContainer, NavMenu, NavSignup, LogoContainer, NavLogo } from './NavarElements';
+import { NavbarContainer, NavMenuContainer, NavMenuLinksContainer, NavMenuLink, NavSignupContainer, LogoContainer, NavLogo, NavBtnLink, NavBtn } from './NavarElements';
 import logo from '../../assets/images/GoTrek-4.png';
 
 function Navbar() {
   return (
     <NavbarContainer>
-      <NavMenu><h1>Menu</h1></NavMenu>
+      <NavMenuContainer>
+        <NavMenuLinksContainer>
+            <NavMenuLink to='/explore'>Explore</NavMenuLink>
+            <NavMenuLink to='/profile'>Profile</NavMenuLink>
+            <NavMenuLink to='/about'>About</NavMenuLink>
+        </NavMenuLinksContainer>
+      </NavMenuContainer>
       <LogoContainer>
         <NavLogo to='/'>
           <img src={logo} alt='logo'/>
         </NavLogo>
       </LogoContainer>
-      <NavSignup><h1>Signup</h1></NavSignup>
+      <NavSignupContainer>
+        <NavBtnLink to='/signup'>Signup</NavBtnLink>
+      </NavSignupContainer>
     </NavbarContainer>
   )
 }
