@@ -11,7 +11,7 @@ function TrailCards() {
                     <img src={photo} alt='hiking' />
                 </TrailImage>
                 <TrailInformation>
-                    <h3>Title</h3>
+                    <h3>Trail Name</h3>
                     <h5>Distance: 10 miles</h5>
                     <p>Information</p>
                 </TrailInformation>
@@ -21,7 +21,7 @@ function TrailCards() {
                     <img src={photo} alt='hiking' />
                 </TrailImage>
                 <TrailInformation>
-                    <h3>Title</h3>
+                    <h3>Trail Name</h3>
                     <h5>Distance: 10 miles</h5>
                     <p>Information</p>
                 </TrailInformation>
@@ -31,7 +31,7 @@ function TrailCards() {
                     <img src={photo} alt='hiking' />
                 </TrailImage>
                 <TrailInformation>
-                    <h3>Title</h3>
+                    <h3>Title Name</h3>
                     <h5>Distance: 10 miles</h5>
                     <p>Information</p>
                 </TrailInformation>
@@ -41,7 +41,7 @@ function TrailCards() {
                     <img src={photo} alt='hiking' />
                 </TrailImage>
                 <TrailInformation>
-                    <h3>Title</h3>
+                    <h3>Title Name</h3>
                     <h5>Distance: 10 miles</h5>
                     <p>Information</p>
                 </TrailInformation>
@@ -54,7 +54,7 @@ function TrailCards() {
                     <img src={photo} alt='hiking' />
                 </TrailImage>
                 <TrailInformation>
-                    <h3>Title</h3>
+                    <h3>Title Name</h3>
                     <h5>Distance: 10 miles</h5>
                     <p>Information</p>
                 </TrailInformation>
@@ -64,7 +64,7 @@ function TrailCards() {
                     <img src={photo} alt='hiking' />
                 </TrailImage>
                 <TrailInformation>
-                    <h3>Title</h3>
+                    <h3>Title Name</h3>
                     <h5>Distance: 10 miles</h5>
                     <p>Information</p>
                 </TrailInformation>
@@ -74,7 +74,7 @@ function TrailCards() {
                     <img src={photo} alt='hiking' />
                 </TrailImage>
                 <TrailInformation>
-                    <h3>Title</h3>
+                    <h3>Title Name</h3>
                     <h5>Distance: 10 miles</h5>
                     <p>Information</p>
                 </TrailInformation>
@@ -84,7 +84,7 @@ function TrailCards() {
                     <img src={photo} alt='hiking' />
                 </TrailImage>
                 <TrailInformation>
-                    <h3>Title</h3>
+                    <h3>Title Name</h3>
                     <h5>Distance: 10 miles</h5>
                     <p>Information</p>
                 </TrailInformation>
