@@ -23,7 +23,7 @@ export const LogoContainer = styled.div`
 export const NavLogo = styled(linkRouter)`
     cursor: pointer;
     img {
-        width: 100px;
+        width: 90px;
         border-radius: 10px;
     }
 
@@ -98,13 +98,12 @@ export const NavBtnLink = styled(linkRouter)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
-    /* padding-right: 60px; */
-    border: 2px solid black;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-
+    
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
+        border: 1px solid lightgray;
         /* background-color: #30592E; */
         color: black;
     }
