@@ -1,11 +1,13 @@
 import React from 'react'
 import { ExploreContainer, ExploreWrapper } from './ExploreElements';
+import Map from '../Map'
 
 function Explore() {
   return (
     <ExploreContainer>
         <ExploreWrapper>
-            <h1>Explore Page</h1>
+          <Map />
+            {/* <h1>Explore Page</h1> */}
         </ExploreWrapper>
     </ExploreContainer>
   )
