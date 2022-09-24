@@ -6,7 +6,7 @@ import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 // https://mdbootstrap.com/docs/react/getting-started/installation/
-import '../../assets/Styles/AboutUs.css'
+import '../../assets/styles/AboutUs.css'
 
 
 import CardGroup from 'react-bootstrap/CardGroup';
