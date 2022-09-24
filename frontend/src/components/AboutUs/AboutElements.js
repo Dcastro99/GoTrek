@@ -16,6 +16,6 @@ export const AboutWrapper = styled.div`
     justify-content: center;
     width: 80%;
     height: 80%;
-    border: 2px solid black;
+    // border: 2px solid black;
     background-color: white;
 `;

@@ -1,78 +1,106 @@
 import React from 'react'
 import { AboutContainer, AboutWrapper } from './AboutElements';
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
+// https://mdbootstrap.com/docs/react/getting-started/installation/
+
+
+import {
+  MDBCard,
+  MDBCardImage,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardLink,
+  MDBListGroup,
+  MDBListGroupItem
+} from 'mdb-react-ui-kit';
+
+
+import CardGroup from 'react-bootstrap/CardGroup';
+
+
+
 
 function About() {
   return (
     <AboutContainer>
+  
+      <h1>About Us</h1>
         <AboutWrapper>
-    {/* <Card
-      component="section"
-      variant="gradient"
-      bgColor="dark"
-      position="relative"
-      py={6}
-      px={{ xs: 2, lg: 0 }}
-      mx={-2}
-    > */}
-      <Container>
-        <Grid container>
-          <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-            <MKTypography variant="h3" color="white">
-              The Dev Team
-            </MKTypography>
-            <MKTypography variant="body2" color="white" opacity={0.8}>
-              There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
-              at. That&apos;s my skill.
-            </MKTypography>
-          </Grid>
-        </Grid>
-        <Grid container spacing={3}>
-          <Grid item xs={12} lg={6}>
-            <Card mb={1}>
-                image={team1}
-                name="Name"
-                position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </Card>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <Card mb={1}>
-              <HorizontalTeamCard
-                image={team2}
-                name="Name"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </Card>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <Card
-                image={team3}
-                name="Name"
-                position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </MKBox>
-          </Grid>
-          <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
-              <HorizontalTeamCard
-                image={team4}
-                name="Name"
-                position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
-              />
-            </MKBox>
-          </Grid>
-        </Grid>
-      </Container>
-    {/* </Card> */}
-</AboutWrapper>
+            
+    <CardGroup>
+    <MDBCard>
+      <MDBCardImage position='top' alt='...' src='https://avatars.githubusercontent.com/u/70992980?v=4' />
+      <MDBCardBody>
+        <MDBCardTitle>Tony Regalado</MDBCardTitle>
+        <MDBCardBody>
+        Description      
+        </MDBCardBody>
+      </MDBCardBody>
+      <MDBListGroup flush>
+        <MDBListGroupItem> <MDBCardLink href='https://github.com/Edward-Regalado'>GitHub</MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='#'>LinkedIn</MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='#'>Twitter</MDBCardLink></MDBListGroupItem>
+      </MDBListGroup>
+    </MDBCard>
+    <MDBCard>
+      <MDBCardImage position='top' alt='...' src='https://avatars.githubusercontent.com/u/107226923?v=4' />
+      <MDBCardBody>
+        <MDBCardTitle>Von Arzu</MDBCardTitle>
+        <MDBCardBody>
+        Description      
+        </MDBCardBody>
+      </MDBCardBody>
+      <MDBListGroup flush>
+        <MDBListGroupItem> <MDBCardLink href='https://github.com/ArzuVon'>GitHub</MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='#'>LinkedIn</MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='#'>Twitter</MDBCardLink></MDBListGroupItem>
+      </MDBListGroup>
+    </MDBCard>
+    <MDBCard>
+      <MDBCardImage position='top' alt='...' src='https://avatars.githubusercontent.com/u/93397389?v=4' />
+      <MDBCardBody>
+        <MDBCardTitle>Danny Castro</MDBCardTitle>
+        <MDBCardBody>
+        Description      
+        </MDBCardBody>
+      </MDBCardBody>
+      <MDBListGroup flush>
+        <MDBListGroupItem> <MDBCardLink href='https://github.com/Dcastro99'>GitHub</MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='#'>LinkedIn</MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='#'>Twitter</MDBCardLink></MDBListGroupItem>
+      </MDBListGroup>
+    </MDBCard>
+      <MDBCard>
+      <MDBCardImage position='top' alt='...' src='https://avatars.githubusercontent.com/u/82287550?v=4' />
+      <MDBCardBody>
+        <MDBCardTitle>Sarah Teklemariam</MDBCardTitle>
+        <MDBCardBody>
+        Description      
+        </MDBCardBody>
+      </MDBCardBody>
+      <MDBListGroup flush>
+        <MDBListGroupItem> <MDBCardLink href='https://github.com/SarahTek'>GitHub</MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='#'>LinkedIn</MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='#'>Twitter</MDBCardLink></MDBListGroupItem>
+      </MDBListGroup>
+    </MDBCard>
+    <MDBCard>
+      <MDBCardImage position='top' alt='...' src='https://avatars.githubusercontent.com/u/98293148?v=4' />
+      <MDBCardBody>
+        <MDBCardTitle>Justin Mathieu</MDBCardTitle>
+        <MDBCardBody>
+        Description      
+        </MDBCardBody>
+      </MDBCardBody>
+      <MDBListGroup flush>
+        <MDBListGroupItem> <MDBCardLink href='https://github.com/Justin-Mathieu'>GitHub</MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='#'>LinkedIn</MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='#'>Twitter</MDBCardLink></MDBListGroupItem>
+      </MDBListGroup>
+    </MDBCard>
+    </CardGroup>
+        </AboutWrapper>
     </AboutContainer>
   )
 }
