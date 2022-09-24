@@ -5,6 +5,7 @@ import SignUpPage from './pages/SignUpPage.js';
 import ExplorePage from './pages/ExplorePage.js';
 import AboutUsPage from './pages/AboutUsPage.js';
 import ProfilePage from './pages/ProfilePage.js';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

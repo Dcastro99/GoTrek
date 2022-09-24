@@ -10,8 +10,8 @@ export const SplashContainer = styled.div`
 `;
 
 export const CarouselContainer = styled.div`
-    /* height: 20vh; */
-    width: 90%;
+    /* height: 50vh; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
