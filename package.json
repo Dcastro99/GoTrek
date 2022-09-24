@@ -3,7 +3,9 @@
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.6",
+    "bootstrap": "^5.2.1",
     "deck.gl": "^8.8.11",
+    "react-bootstrap": "^2.5.0",
     "react-icons": "^4.4.0"
   }
 }
