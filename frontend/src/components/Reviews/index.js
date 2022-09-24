@@ -2,11 +2,7 @@ import "./ReviewTrails.css";
 import { useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 //Idea from https://react-icons.github.io/react-icons/icons?name=ai
-<<<<<<< HEAD:frontend/src/components/Trails/index.js
-import img from '../../assets/images/hike.jpg'
-=======
 import image from '../../assets/images/pic1.jpg';
->>>>>>> dev:frontend/src/components/Reviews/index.js
 
 export default function ReviewTrails() {
   const [number, setNumber] = useState(0);
