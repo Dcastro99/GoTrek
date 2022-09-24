@@ -15,7 +15,7 @@ export const CarouselContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* background: lightblue; */
 `;
 
@@ -25,5 +25,6 @@ export const TrailsNearbyContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    margin-bottom: 30px;
+    /* border: 2px solid black; */
 `;

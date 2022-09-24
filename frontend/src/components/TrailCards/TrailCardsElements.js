@@ -19,6 +19,7 @@ export const TrailRowContainer = styled.div`
     width: 90%;
     margin-top: 30px;
     margin-bottom: 30px;
+    /* padding: 10px; */
 `;
 
 export const TrailCard = styled.div`
@@ -27,13 +28,14 @@ export const TrailCard = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 1px solid black;
+    padding: 10px;
     width: 25%;
     margin: 20px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.08);
         transition: all 0.3s ease-in-out;
     }
 `;
@@ -41,6 +43,7 @@ export const TrailCard = styled.div`
 export const TrailImage = styled.div`
     img{
         width: 100%;
+        border-radius: 10px;
     }
 `;
 

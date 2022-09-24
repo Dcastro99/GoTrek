@@ -1,5 +1,6 @@
 import React from 'react'
 import { CarouselWrapper, CarouselCard } from './CarouselElements';
+import SearchBar from '../SearchBar';
 import photo from '../../assets/images/banner2.jpg';
 
 function Carousel() {
@@ -8,6 +9,7 @@ function Carousel() {
         <CarouselCard>
             <img src={photo} alt='banner'/>
         </CarouselCard>
+        <SearchBar />
     </CarouselWrapper>
   )
 }
