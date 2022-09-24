@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-
+import React from 'react'
 import { SplashContainer, CarouselContainer, TrailsNearbyContainer } from './SplashElements';
 import Carousel from '../Carousel';
 import TrailCards from '../TrailCards';
 
 function Splash() {
-  
+
   return (
     <SplashContainer>
       <CarouselContainer>

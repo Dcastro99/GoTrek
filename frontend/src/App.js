@@ -11,11 +11,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path='/' element= { < HomePage /> } />
-        <Route exact path='/signup' element= { < SignUpPage /> } />
-        <Route exact path='/explore' element= { < ExplorePage /> } />
-        <Route exact path='/about' element= { < AboutUsPage /> } />
-        <Route exact path='/profile' element= { < ProfilePage /> } />
+        <Route exact path='/' element={< HomePage />} />
+        <Route exact path='/signup' element={< SignUpPage />} />
+        <Route exact path='/explore' element={< ExplorePage />} />
+        <Route exact path='/about' element={< AboutUsPage />} />
+        <Route exact path='/profile' element={< ProfilePage />} />
       </Routes>
     </Router>
   );
