@@ -6,8 +6,9 @@ export const CarouselWrapper = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* border: 2px solid black; */
-    /* margin: 30px; */
+    height: 70%;
+    border: 2px solid black;
+    /* margin: 100px; */
     margin-top: 30px;
     margin-bottom: 50px;
 `;
@@ -17,10 +18,15 @@ export const CarouselCard = styled.div`
     align-items: center;
     justify-content: center;
     /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1); */
-    /* border: 2px solid green; */
+    border: 2px solid green;
     img {
-        width: 70%;
+        width: 50%;
         /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1); */
 
     }
 `;
+
+export const CarouselImage = styled.img`
+    width: 100%;
+`
+

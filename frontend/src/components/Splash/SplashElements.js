@@ -10,12 +10,12 @@ export const SplashContainer = styled.div`
 `;
 
 export const CarouselContainer = styled.div`
-    /* height: 20vh; */
+    height: 50vh;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     /* background: lightblue; */
 `;
 
