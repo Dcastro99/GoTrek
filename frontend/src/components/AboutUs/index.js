@@ -89,7 +89,7 @@ function About() {
       </MDBCardBody>
       <MDBListGroup flush>
         <MDBListGroupItem> <MDBCardLink href='https://github.com/Dcastro99'><SocialMedia><FaGithub/></SocialMedia></MDBCardLink></MDBListGroupItem>
-        <MDBListGroupItem><MDBCardLink href='#'><SocialMedia><FaLinkedin/></SocialMedia></MDBCardLink></MDBListGroupItem>
+        <MDBListGroupItem><MDBCardLink href='https://www.linkedin.com/in/dcastro99/'><SocialMedia><FaLinkedin/></SocialMedia></MDBCardLink></MDBListGroupItem>
       </MDBListGroup>
     </MDBCard>
       <MDBCard>
