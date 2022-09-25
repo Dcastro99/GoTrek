@@ -5,7 +5,9 @@ import SignUpPage from './pages/SignUpPage.js';
 import ExplorePage from './pages/ExplorePage.js';
 import AboutUsPage from './pages/AboutUsPage.js';
 import ProfilePage from './pages/ProfilePage.js';
+import TrailDetailPage from './pages/TrailDetailPage.js';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route exact path='/explore' element={< ExplorePage />} />
         <Route exact path='/about' element={< AboutUsPage />} />
         <Route exact path='/profile' element={< ProfilePage />} />
+       <Route exact path='/trail' element={< TrailDetailPage />} />
       </Routes>
     </Router>
   );
