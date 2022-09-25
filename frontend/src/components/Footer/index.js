@@ -41,11 +41,11 @@ function Footer() {
       </FooterLinkContainer>
       <SocialMediaContainer>
         <CopyRight>
-          <h3>CopyRight 2022</h3>
+          <h3>&copy;GoTrek</h3>
         </CopyRight>
         <SocialMedia>
           <SocialMediaTitle>
-            <h4>Social Media</h4>
+            {/* <h4>Social Media</h4> */}
           </SocialMediaTitle>
           <SocialMediaIcons>
             <SocialA href="instagram.com" target="_blank"></SocialA>

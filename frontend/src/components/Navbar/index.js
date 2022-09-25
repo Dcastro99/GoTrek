@@ -1,6 +1,7 @@
 import React from 'react'
-import { NavbarContainer, NavMenuContainer, NavMenuLinksContainer, NavMenuLink, NavSignupContainer, LogoContainer, NavLogo, NavBtnLink } from './NavarElements';
+import { NavbarContainer, NavMenuContainer, NavMenuLinksContainer, NavMenuLink, NavSignupContainer, LogoContainer, NavLogo, NavBtnLink, Link1, Link2 } from './NavarElements';
 import logo from '../../assets/images/GoTrek-4.png';
+import userEvent from '@testing-library/user-event';
 
 function Navbar() {
   return (
@@ -18,9 +19,18 @@ function Navbar() {
         </NavLogo>
       </LogoContainer>
       <NavSignupContainer>
-        <NavBtnLink to='/signup'>Signup</NavBtnLink>
+        <Link1>
+          {/* <NavBtnLink id='button1' to='/signup'>Signup</NavBtnLink> */}
+        </Link1>
+        {this.props.auth0.isAuthenticated &&
+          <>
+            < Link2 >
+              {/* <NavBtnLink id='button2' to='/login'>Login</NavBtnLink> */}
+            </Link2>
+          </>
+        }
       </NavSignupContainer>
-    </NavbarContainer>
+    </NavbarContainer >
   )
 }
 

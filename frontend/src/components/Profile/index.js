@@ -1,48 +1,80 @@
 import React from 'react'
 // import { useAuth0 } from "@auth0/auth0-react";
-import { ProfileContainer, ProfileWrapper, ProfileCard, ProfileImage, ProfileInformation, ProfileBio, ProfileTrailContainer, ProfileTrailCards } from './ProfileElements';
+import { ProfileContainer, ProfileWrapper, ProfileCard, ProfileImage, ProfileInformation, ProfileBio, ProfileTrailContainer, ProfileTrailInformation, ProfileTrailCards, ProfileTrailImage, RecentTrailsTitle, TrailCardWrapper, ProfileTitle } from './ProfileElements';
 import photo from '../../assets/images/masterHiker.jpeg';
 import photo1 from '../../assets/images/hike.jpg';
+import LogoutButton from '../Logout';
+import { withAuth0 } from '@auth0/auth0-react';
+
 function Profile() {
+
+
+
   return (
     <ProfileContainer>
+      <ProfileTitle>
+        <h1>My Profile</h1>
+      </ProfileTitle>
       <ProfileWrapper>
+        {
+          //>>>>>>>PROFILE CARD>>>>>>>>
+        }
         <ProfileCard>
           <ProfileImage>
             <img src={photo} alt='hiking' />
           </ProfileImage>
           <ProfileInformation>
             <h3>Don Hiker</h3>
-            <h5>email: wildman@mntn.com</h5>
+            <h5>wildman@mntn.com</h5>
           </ProfileInformation>
         </ProfileCard>
+
+        {
+          //>>>>>>>PROFILE BIO>>>>>>>>
+        }
+
         <ProfileBio>
-          <p>Bio: I explore...I hike...I live.</p>
+          <h4>MyBio:</h4>
+          <p>I explore...I hike...I live.</p>
         </ProfileBio>
+
+        {
+          //>>>>>>>RECENT TRAILS>>>>>>>>
+        }
+
         <ProfileTrailContainer>
-          <h2>Recent Trails</h2>
-          <ProfileTrailCards>
-            <ProfileImage>
-              <img src={photo1} alt='hiking' />
-            </ProfileImage>
-            <ProfileInformation>
-              <h3>Title</h3>
-              <h5>Distance: 10 miles</h5>
-              <p>Information</p>
-            </ProfileInformation>
 
-          </ProfileTrailCards>
-          <ProfileTrailCards>
-            <ProfileImage>
-              <img src={photo1} alt='hiking' />
-            </ProfileImage>
-            <ProfileInformation>
-              <h3>Title</h3>
-              <h5>Distance: 10 miles</h5>
-              <p>Information</p>
-            </ProfileInformation>
+          <RecentTrailsTitle>
+            <h2>Recent Trails</h2>
+          </RecentTrailsTitle>
+          <TrailCardWrapper>
+            <ProfileTrailCards>
+              <ProfileTrailImage>
+                <img src={photo1} alt='hiking' />
+              </ProfileTrailImage>
+              <ProfileTrailInformation>
+                <h4>Mail Box</h4>
+                <h5>Distance: 10 miles</h5>
+                <p>Information</p>
+              </ProfileTrailInformation>
+            </ProfileTrailCards>
+            <ProfileTrailCards>
+              <ProfileTrailImage>
+                <img src={photo1} alt='hiking' />
+              </ProfileTrailImage>
 
-          </ProfileTrailCards>
+              {
+                //>>>>>>>PROFILE INFO>>>>>>>
+              }
+
+              <ProfileTrailInformation>
+                <h4>Rattle Snake</h4>
+                <h5>Distance: 12 miles</h5>
+                <p>Information</p>
+              </ProfileTrailInformation>
+
+            </ProfileTrailCards>
+          </TrailCardWrapper>
         </ProfileTrailContainer>
       </ProfileWrapper>
     </ProfileContainer>
