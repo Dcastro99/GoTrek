@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CarouselContainer, CarouselImage } from './CarouselElements';
+import { CarouselMainContainer, CarouselWrapper, CarouselImage } from './CarouselElements';
 import SearchBar from '../SearchBar';
 import banner1 from '../../assets/images/carousel/banner.jpg';
 import banner2 from '../../assets/images/carousel/banner2.png';
@@ -12,48 +12,47 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function ControlledCarousel() {
 
   return (
-    <CarouselContainer>
-
-      <Carousel interval={4000}>
-        {/* <Carousel.Item className='carouselItem'> */}
-        <Carousel.Item>
-          <CarouselImage
-            className="d-block w-100"
-            src={banner1}
-            alt="First slide"
-            />
-          {/* <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-        <Carousel.Item>
-          <CarouselImage
-            className="d-block w-100"
-            src={banner2}
-            alt="First slide"
-            />
-          {/* <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-        <Carousel.Item>
-          <CarouselImage
-            className="d-block w-100"
-            src={banner3}
-            alt="First slide"
-            />
-          {/* <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-    
-      </Carousel>
-      <SearchBar />
-    </CarouselContainer>
-  // </CarouselWrapper>
+    <CarouselMainContainer>
+      <CarouselWrapper>
+        <Carousel interval={4000}>
+          {/* <Carousel.Item className='carouselItem'> */}
+          <Carousel.Item>
+            <CarouselImage
+              className="d-block w-100"
+              src={banner1}
+              alt="First slide"
+              />
+            {/* <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption> */}
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImage
+              className="d-block w-100"
+              src={banner2}
+              alt="First slide"
+              />
+            {/* <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption> */}
+          </Carousel.Item>
+          <Carousel.Item>
+            <CarouselImage
+              className="d-block w-100"
+              src={banner3}
+              alt="First slide"
+              />
+            {/* <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption> */}
+          </Carousel.Item>
+          </Carousel>
+        <SearchBar />
+        </CarouselWrapper>
+    </CarouselMainContainer>
   );
 }
 

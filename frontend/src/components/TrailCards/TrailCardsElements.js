@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const TrailsMainContainer = styled.div`
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+`;
 
 export const TrailCardsWrapper = styled.div`
     display: flex;
@@ -28,7 +35,7 @@ export const TrailCard = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 10px;
     width: 25%;
     margin: 20px;
