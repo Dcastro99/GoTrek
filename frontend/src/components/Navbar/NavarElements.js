@@ -41,7 +41,7 @@ export const NavMenuContainer = styled.ul`
     justify-content: center;
     list-style: none;
     text-align: center;
-    /* border: 2px solid black; */
+    border: 2px solid black;
 `;
 
 export const NavMenuLinksContainer = styled.div`
@@ -50,7 +50,7 @@ export const NavMenuLinksContainer = styled.div`
     justify-content: space-around;
     width: 50%;
     margin-right: 180px;
-    /* border: 2px solid black; */
+    border: 2px solid black;
 `;
 
 export const NavMenuLink = styled(linkRouter)`

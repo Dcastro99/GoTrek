@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavbarContainer, NavMenuContainer, NavMenuLinksContainer, NavMenuLink, NavSignupContainer, LogoContainer, NavLogo, NavBtnLink } from './NavarElements';
-//NavBtn
 import logo from '../../assets/images/GoTrek-4.png';
 
 function Navbar() {
