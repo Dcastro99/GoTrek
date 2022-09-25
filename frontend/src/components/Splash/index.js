@@ -1,18 +1,19 @@
 import React from 'react'
-import { SplashContainer, CarouselContainer, TrailsNearbyContainer } from './SplashElements';
+import { SplashContainer } from './SplashElements';
 import Carousel from '../Carousel';
 import TrailCards from '../TrailCards';
+import Media from '../Media';
+import BrowseCategory from '../BrowseCategory';
+
 
 function Splash() {
 
   return (
     <SplashContainer>
-      <CarouselContainer>
-        <Carousel />
-      </CarouselContainer>
-      <TrailsNearbyContainer>
-        <TrailCards />
-      </TrailsNearbyContainer>
+      <Carousel />
+      <TrailCards />
+      <Media />
+      <BrowseCategory />
     </SplashContainer>
   )
 }
