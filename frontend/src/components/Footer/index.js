@@ -51,7 +51,7 @@ function Footer() {
             </SocialMediaTitle>
             <SocialMediaIcons>
               <SocialA href="https://www.facebook.com/" target="_blank">
-                  <FaFacebook />
+                <FaFacebook />
               </SocialA>
               <SocialA href="https://www.instagram.com" target="_blank">
                 <FaInstagram />

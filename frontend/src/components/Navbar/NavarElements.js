@@ -9,6 +9,7 @@ export const NavbarContainer = styled.nav`
     align-items: center;
     font-size: 1rem;
     /* background-color: lightgreen; */
+    margin: 20px 0px 0px 0px
 `;
 
 export const LogoContainer = styled.div`
@@ -108,3 +109,14 @@ export const NavBtnLink = styled(linkRouter)`
         color: black;
     }
     `;
+export const Link1 = styled.nav`
+    display: flex;
+    align-items: center;
+    margin:10px;
+    /* border: 2px solid black; */
+`;
+export const Link2 = styled.nav`
+display: flex;
+align-items: center;
+//  border: 2px solid black; 
+`;
