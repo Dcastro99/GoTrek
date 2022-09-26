@@ -9,26 +9,29 @@ import AboutUsPage from './pages/AboutUsPage.js';
 import ProfilePage from './pages/ProfilePage.js';
 import TrailDetailPage from './pages/TrailDetailPage.js';
 import HomePage from './pages/HomePage';
+import Trails from '../../frontend/src/components/TrailCard'
+import '../src/Styles/App.css'
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      allTrails: null,
+      allTrails: [],
     };
   }
 
   componentDidMount() {
-    this.handleGetTrails();
+    this.handleGetAllTrails();
   }
-  handleGetTrails = async () => {
+  handleGetAllTrails = async () => {
     const config = {
       baseURL: `${process.env.REACT_APP_HEROKU_URL}`,
       method: 'get',
     };
     const res = await axios(config);
-    console.log('res', res)
+    // console.log('res', res.data);
     this.setState({ allTrails: res.data });
+    // console.log('res>>>>>>>>', res.data)
   };
 
   render() {
@@ -40,15 +43,15 @@ class App extends React.Component {
           <ReactLoading
             id="loading"
             type={'spokes'}
-            color={'blue'}
+            color={'green'}
             height={667}
-            width={375}
+            width={100}
           />
         </div>
       );
     }
 
-
+    // handleGetAllTrails={this.handleGetAllTrails} 
     return (
       <Router>
         <Routes>
@@ -59,9 +62,10 @@ class App extends React.Component {
               <Route
                 path="/"
                 element={
-                  <HomePage />
+                  <HomePage allTrails={this.state.allTrails} />
                 }
               />
+              <Route path="Trails" element={<Trails />} />
               {/* <Route exact path='/signup' element={< SignUpPage />} /> */}
               {/* <Route exact path='/login' element={< LoginPage />} /> */}
               <Route exact path='/explore' element={< ExplorePage />} />

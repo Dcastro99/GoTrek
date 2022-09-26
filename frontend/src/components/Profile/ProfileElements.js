@@ -58,6 +58,7 @@ display: flex;
         align-items: center;
         justify-content: center;
     img{
+        
         width: 100%;
     }
 `;
@@ -99,6 +100,20 @@ export const ProfileTrailContainer = styled.div`
     // border: 8px solid black;
     /* background: lightgreen; */
 `;
+
+
+
+export const RecentTrailsTitle = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    // border: 2px solid black;
+    h2{
+        
+    }
+`;
 export const ProfileTrailCards = styled.div`
     display: flex;
     flex-direction: column;
@@ -131,17 +146,6 @@ display: flex;
         width: 70%;
     }
 `;
-export const RecentTrailsTitle = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 20px;
-    // border: 2px solid black;
-    h2{
-        
-    }
-`;
 export const TrailCardWrapper = styled.div`
 display: flex;
 flex-direction: column;
@@ -151,4 +155,4 @@ width: 70%;
 margin: 10px 0px 10px 0px
 // border: 2px solid black;
 
-`
+`;
