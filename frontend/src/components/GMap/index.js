@@ -75,7 +75,12 @@ import {
         h='100vh'
         w='100vw'
       >
-        <Box position='absolute' left={0} top={0} h='100%' w='100%'>
+        {/* position='absolute' left={0} top={0} */}
+        <Box  display='flex' alignItems= 'center'
+            justify-content='center'
+            h='50%' w='50%'
+            border='2px solid black'
+            background='white'>
           {/* Google Map Box */}
           <GoogleMap
             center={center}
