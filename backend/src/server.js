@@ -3,25 +3,29 @@
 // Instanciate express server and server setup
 require('dotenv').config();
 const express = require('express');
-const app = express();
-const mongoose = require('mongoose');
-const Trail = require('./Models/trailSchema')
-
-
-// Cors for middleware
 const cors = require('cors');
-//VERIFICATION-AUTH0>>>>>>
-// const verifyUser = require('./Auth/auth');
+
+
+
+
+// error Handling
 const notFoundHandler = require('./Handlers/error404');
 const errorHandler = require('./Handlers/error500');
 
 
-// Use the things.
+//VERIFICATION-AUTH0>>>>>>
+const verifyUser = require('./Auth/auth');
+
+
+//App using express & JSON
+const PORT = process.env.PORT || 3002;
+const app = express();
 app.use(cors());
 app.use(express.json());
-// app.use(verifyUser);
 
-// Connect databas
+
+// MongoDB
+const mongoose = require('mongoose');
 mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
@@ -29,15 +33,15 @@ db.once('open', function () {
   console.log('Mongoose is connected');
 });
 
-const PORT = process.env.PORT || 3002;
+//Models for MongoDB
+const Trail = require('./Models/trailSchema')
 
+// Landing path
+app.get('/', handleGetTrails)
 
-app.get('/', (request, response) => {
-  response.send('Hello BSquad!!!');
-});
+// Do not move line this line below <*>
+app.use(verifyUser);
 
-
-app.get('/trails', handleGetTrails)
 app.get('/trails/:id', handleGetOneTrail)
 
 async function handleGetTrails(req, res) {
@@ -65,9 +69,18 @@ async function handleGetOneTrail(req, res) {
   }
 }
 
+
+//Landing page for testing purposes
+app.get('/', (request, response) => {
+  response.send('Hello BSquad!!!');
+});
+
+app.get('*', notFoundHandler);
+
 // Error stuff 
-app.use('*', notFoundHandler);
 app.use(errorHandler);
+
+
 
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
