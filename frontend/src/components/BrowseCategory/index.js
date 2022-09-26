@@ -16,34 +16,34 @@ function Browse() {
             <BrowseCard to='/profile'>
               <Link to='/profile'>
                 <BrowseImage src={backpack}/>
+                <BrowseText>Backpacking</BrowseText>
+              </Link>
+            </BrowseCard>
+            <BrowseCard>
+              <Link to='/hiking'>
+                <BrowseImage src={hike}/>
                 <BrowseText>
-                  Backpacking
+                  Hiking
                 </BrowseText>
               </Link>
             </BrowseCard>
             <BrowseCard>
-              <BrowseImage src={hike}/>
-              <BrowseText>
-                Hiking
-              </BrowseText>
+              <Link>
+                <BrowseImage src={walk}/>
+                <BrowseText>Walking</BrowseText>
+              </Link>
             </BrowseCard>
             <BrowseCard>
-              <BrowseImage src={walk}/>
-              <BrowseText>
-                Walking
-              </BrowseText>
-            </BrowseCard>
+                <Link>
+                <BrowseImage src={run}/>
+                <BrowseText>Running</BrowseText>
+                </Link>
+              </BrowseCard>
             <BrowseCard>
-              <BrowseImage src={run}/>
-              <BrowseText>
-                Running
-              </BrowseText>
-            </BrowseCard>
-            <BrowseCard>
-              <BrowseImage src={bike}/>
-              <BrowseText>
-                Biking
-              </BrowseText>
+              <Link>
+                <BrowseImage src={bike}/>
+                <BrowseText>Biking</BrowseText>
+              </Link>
             </BrowseCard>
         </BrowseWrapper>
     </BrowseContainer>
