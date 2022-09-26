@@ -3,7 +3,6 @@ import { withAuth0 } from "@auth0/auth0-react";
 import { ProfileContainer, ProfileWrapper, ProfileCard, ProfileImage, ProfileInformation, ProfileBio, ProfileTrailContainer, RecentTrailsTitle, ProfileTitle, ProfileTrailInformation, ProfileTrailCards, ProfileTrailImage, TrailCardWrapper } from './ProfileElements';
 import photo1 from '../../assets/images/hike.jpg';
 import axios from 'axios';
-// import ProfileCards from '../ProfileCard';
 
 class Profile extends React.Component {
   constructor(props) {
