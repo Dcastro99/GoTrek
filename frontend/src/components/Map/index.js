@@ -1,5 +1,5 @@
-import React from 'react';
-import Location from '../../assets/images/map1.png';
+import React from "react";
+import Location from "../../assets/images/map1.png";
 
 // console.log(Location);
 
