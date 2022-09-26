@@ -20,7 +20,8 @@ import {
   } from '@react-google-maps/api'
   import { useRef, useState } from 'react'
   
-  const center = { lat: 48.8584, lng: 2.2945 }
+  const center = { lat: 47.695721, lng: -122.278343 }
+// Hiking trail = Burke-Gilman Trail, Seattle, WA
   
   function Map() {
       // checks when api is loaded and Google ai is in .env made w/google console profile under credentilas
