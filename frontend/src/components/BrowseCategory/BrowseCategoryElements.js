@@ -46,7 +46,6 @@ export const BrowseCard = styled.div`
 `;
 
 export const Link = styled(linkRouter)`
-    border: solid 1px black;
     /* background: pink; */
     text-decoration: none;
 

@@ -8,7 +8,6 @@ export const SustainabilityContainer = styled.div`
     height: 300px;
     background-color: #44733D;
     margin-bottom: 40px;
-    /* border: 2px solid black; */
 `;
 
 export const InformationSection = styled.section`
