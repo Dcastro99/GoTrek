@@ -23,6 +23,7 @@ import {
   const center = { lat: 48.8584, lng: 2.2945 }
   
   function Map() {
+      // checks when api is loaded and Google ai is in .env made w/google console profile under credentilas
     const { isLoaded } = useJsApiLoader({
       googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
       libraries: ['places'],
