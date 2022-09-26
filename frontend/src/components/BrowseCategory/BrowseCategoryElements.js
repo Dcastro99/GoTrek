@@ -37,7 +37,7 @@ export const BrowseCard = styled.div`
     width: 20%;
     font-size: 1.5rem;
     margin: 20px;
-    /* border: 1px solid black; */
+    //  border: 1px solid black; 
 
     &:hover {
         transform: scale(1.1);
@@ -57,7 +57,7 @@ export const BrowseImage = styled.img`
     height: 10rem;
     border-radius: 50%;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-    /* border: 1px solid black; */
+    //  border: 1px solid black; 
 `;
 
 export const BrowseText = styled.div`

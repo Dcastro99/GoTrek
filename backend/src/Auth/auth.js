@@ -1,5 +1,5 @@
 'use strict';
-
+//verify
 const jwt = require('jsonwebtoken'); // auth
 const jwksClient = require('jwks-rsa'); // auth
 
