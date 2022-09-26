@@ -3,8 +3,7 @@ import React from 'react'
 import { ProfileContainer, ProfileWrapper, ProfileCard, ProfileImage, ProfileInformation, ProfileBio, ProfileTrailContainer, ProfileTrailInformation, ProfileTrailCards, ProfileTrailImage, RecentTrailsTitle, TrailCardWrapper, ProfileTitle } from './ProfileElements';
 import photo from '../../assets/images/masterHiker.jpeg';
 import photo1 from '../../assets/images/hike.jpg';
-import LogoutButton from '../Logout';
-import { withAuth0 } from '@auth0/auth0-react';
+// import LogoutButton from '../../components/Logout/index';
 
 function Profile() {
 
