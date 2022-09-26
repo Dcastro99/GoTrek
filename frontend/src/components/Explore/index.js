@@ -1,14 +1,16 @@
 import React from 'react'
 import { ExploreContainer, ExploreWrapper } from './ExploreElements';
-// import Map from '../Map'
-import GMap from '../GMap'
+import { ChakraProvider, theme } from '@chakra-ui/react'
+import Map from '../GMap'
 
 
 function Explore() {
   return (
     <ExploreContainer>
         <ExploreWrapper>
-          <GMap />  
+        <ChakraProvider theme={theme}>
+            <Map />
+        </ChakraProvider>  
       </ExploreWrapper>
     </ExploreContainer>
   )
