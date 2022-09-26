@@ -10,7 +10,7 @@ import ProfilePage from './pages/ProfilePage.js';
 import TrailDetailPage from './pages/TrailDetailPage.js';
 import HomePage from './pages/HomePage';
 import Trails from '../../frontend/src/components/TrailCard'
-import '../src/Styles/App.css'
+import './assets/styles/App.css'
 
 class App extends React.Component {
   constructor(props) {
