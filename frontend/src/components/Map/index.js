@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
-import { MapContainer, MapButton } from './MapElement';
+import { MapContainer, MapButton, MapText } from './MapElement';
 import 'mapbox-gl/dist/mapbox-gl.css';
 // import trailData from '../../assets/data/allTrails.json';
 import trailData from '../../assets/data/test-data.json';
@@ -18,6 +18,17 @@ function ReactMap() {
 
     const [selectedTrail, setSelectedTrail] = useState(null);
 
+    useEffect(() => {
+      const listener = e => {
+        if(e.key === 'Escape') {
+          setSelectedTrail(null);
+      }
+    };
+      window.addEventListener('keydown', listener);
+      return () => {
+        window.removeEventListener('keydown', listener);
+      }
+    }, []);
 
     return (
       <MapContainer>
@@ -53,13 +64,14 @@ function ReactMap() {
                 setSelectedTrail(null);
               }}
             >
-              <h3>{selectedTrail.name}</h3>
-                {/* <p>{selectedTrail.url}</p> */}
-                {/* <p>
+              <MapText>
+                <h3>{selectedTrail.name}</h3>
+                <p>
                   {selectedTrail.length}
                   {selectedTrail.gain}
                   {selectedTrail.requiredPass}
-                </p> */}
+                </p>
+              </MapText>
             </Popup>
           ) : null}
         </ReactMapGL>

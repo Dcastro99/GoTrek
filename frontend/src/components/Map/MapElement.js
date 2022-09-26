@@ -11,6 +11,7 @@ export const MapContainer = styled.div`
 `;
 
 export const MapText = styled.div`
+    width: 100px;
     border: 3px solid white;
     color: red;
     /* width: 400px; */

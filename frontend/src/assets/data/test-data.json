@@ -86,5 +86,93 @@
         "Fall foliage",
         "Coast"
       ]
+    },
+    {
+      "elevation": {
+        "Highest Point": "120 ft.",
+        "Gain": "120 ft."
+      },
+      "name": "Trail 4",
+      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
+      "coordinates": {
+        "lat": "47.5890",
+        "lon": "-122.2270"
+      },
+      "length": "3.0 miles",
+      "requiredPass": "None",
+      "features": [
+        "Wildflowers/Meadows",
+        "Dogs allowed on leash",
+        "Good for kids",
+        "Lakes",
+        "Fall foliage",
+        "Coast"
+      ]
+    },
+    {
+      "elevation": {
+        "Highest Point": "120 ft.",
+        "Gain": "120 ft."
+      },
+      "name": "Trail 4",
+      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
+      "coordinates": {
+        "lat": "47.5890",
+        "lon": "-122.2270"
+      },
+      "length": "3.0 miles",
+      "requiredPass": "None",
+      "features": [
+        "Wildflowers/Meadows",
+        "Dogs allowed on leash",
+        "Good for kids",
+        "Lakes",
+        "Fall foliage",
+        "Coast"
+      ]
+    },
+    {
+      "elevation": {
+        "Highest Point": "120 ft.",
+        "Gain": "120 ft."
+      },
+      "name": "Trail 4",
+      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
+      "coordinates": {
+        "lat": "47.5890",
+        "lon": "-122.2270"
+      },
+      "length": "3.0 miles",
+      "requiredPass": "None",
+      "features": [
+        "Wildflowers/Meadows",
+        "Dogs allowed on leash",
+        "Good for kids",
+        "Lakes",
+        "Fall foliage",
+        "Coast"
+      ]
+    },
+    {
+      "elevation": {
+        "Highest Point": "120 ft.",
+        "Gain": "120 ft."
+      },
+      "name": "Trail 4",
+      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
+      "coordinates": {
+        "lat": "47.5890",
+        "lon": "-122.2270"
+      },
+      "length": "3.0 miles",
+      "requiredPass": "None",
+      "features": [
+        "Wildflowers/Meadows",
+        "Dogs allowed on leash",
+        "Good for kids",
+        "Lakes",
+        "Fall foliage",
+        "Coast"
+      ]
     }
 ]

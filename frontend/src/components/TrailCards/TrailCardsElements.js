@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TrailsMainContainer = styled.div`
-    width: 90%;
+    width: 100%;
     min-width: 400px;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@ export const TrailCardsWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 80%;
     min-width: 390px;
     position: relative;
 
