@@ -1,14 +1,15 @@
 import React from 'react'
 import { ExploreContainer, ExploreWrapper } from './ExploreElements';
-import Map from '../Map'
+// import Map from '../Map'
+import GMap from '../GMap'
+
 
 function Explore() {
   return (
     <ExploreContainer>
         <ExploreWrapper>
-          <Map />
-            {/* <h1>Explore Page</h1> */}
-        </ExploreWrapper>
+          <GMap />  
+      </ExploreWrapper>
     </ExploreContainer>
   )
 }
