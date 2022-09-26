@@ -14,7 +14,7 @@ const errorHandler = require('./Handlers/error500');
 
 
 //VERIFICATION-AUTH0>>>>>>
-const verifyUser = require('./Auth/auth');
+// const verifyUser = require('./Auth/auth');
 
 
 //App using express & JSON
@@ -35,15 +35,59 @@ db.once('open', function () {
 
 //Models for MongoDB
 const Trail = require('./Models/trailSchema')
+const UserDev = require('./Models/dev')
 
 // Landing path
 app.get('/', handleGetTrails)
+app.get('/dev', handelgetAllDevs);
 
 // Do not move line this line below <*>
-app.use(verifyUser);
-
+// app.use(verifyUser);
+//TRAIL path
 app.get('/trails/:id', handleGetOneTrail)
 
+// dev Paths
+app.get('/userDev', handleGetUserDev);
+app.put('/dev/:id', handleUpdateDev);
+
+
+
+
+//Dev Functions
+async function handelgetAllDevs(req, res) {
+  try {
+    const dev = await UserDev.find();
+    res.status(200).send(dev);
+  } catch (error) {
+    console.error(error);
+    res.status(400).send('Could not find dev');
+  }
+}
+async function handleGetUserDev(req, res) {
+  console.log('OKOKOK', req);
+  try {
+    // const { id } = req.params;
+    const dev = await UserDev.find({ ...req.body, email: req.user.email });
+    res.status(200).send(dev);
+  } catch (error) {
+    console.error(error);
+    res.status(400).send('Could not find dev');
+  }
+}
+async function handleUpdateDev(req, res) {
+  try {
+    const result = await UserDev.findOneAndUpdate(
+      { _id: req.params.id },
+      req.body
+    );
+    res.status('200').send(result);
+  } catch (error) {
+    next(error.message);
+  }
+}
+
+
+//TRAIL Functions
 async function handleGetTrails(req, res) {
   try {
     const trails = await Trail.find(req.trailName);
