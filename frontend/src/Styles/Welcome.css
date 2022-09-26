@@ -7,15 +7,21 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  background: url(../assets/images/logo-w/o.png) no-repeat center center fixed;
+
 }
 
 .welcomeDiv {
-  margin: 0;
+  color: black;
+  margin-bottom: 7rem;
   width: 70%;
   height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+
+  background-color: rgba(223, 223, 223, 0.418);
 }
 
 #welcomeH1 {
@@ -39,7 +45,7 @@
 }
 
 .typewriter {
-  color: white;
+  color: rgb(38, 190, 204);
   width: 0;
   font-size: 2rem;
   overflow: hidden;
