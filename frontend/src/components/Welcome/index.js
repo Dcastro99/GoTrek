@@ -3,7 +3,6 @@ import React from 'react';
 import { WelcomeContainer, WelcomeWrapper, Title, WelcomeStatement, TitleContainer } from './WelcomeElements';
 import { withAuth0 } from '@auth0/auth0-react';
 import LoginButton from '../../components/Login/index';
-// import LoginButton from '../Login/index';
 import ReactLoading from 'react-loading';
 import '../../assets/styles/Welcome.css';
 
