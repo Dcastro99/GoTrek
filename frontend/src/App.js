@@ -14,8 +14,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      allNFT: null,
-      walletItem: null,
+      allTrails: null,
     };
   }
 
@@ -28,6 +27,7 @@ class App extends React.Component {
       method: 'get',
     };
     const res = await axios(config);
+    console.log('res', res)
     this.setState({ allTrails: res.data });
   };
 
