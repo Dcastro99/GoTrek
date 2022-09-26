@@ -31,7 +31,6 @@ export const TrailCardsWrapper = styled.div`
         /* height: 1000px; */
     }
 `;
-
 export const TrailRowContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
