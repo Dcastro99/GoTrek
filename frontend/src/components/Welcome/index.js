@@ -4,7 +4,7 @@ import { WelcomeContainer, WelcomeWrapper, Title, WelcomeStatement, TitleContain
 import { withAuth0 } from '@auth0/auth0-react';
 import LoginButton from '../../components/Login/index';
 import ReactLoading from 'react-loading';
-import '../../Styles/Welcome.css'
+import '../../assets/styles/Welcome.css';
 
 
 const Welcome = (props) => {
