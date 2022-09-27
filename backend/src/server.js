@@ -4,8 +4,27 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const socketIo = require('socket.io')
-const io = socketIo(3000);
+const app = express();
+const http = require('http');
+const { Server } = require("socket.io");
+// const socketIo = require('socket.io')
+// const io = socketIo(3000);
+
+app.use(cors());
+app.use(express.json());
+
+//App using express & JSON
+const PORT = process.env.PORT || 3002;
+// x
+const server = http.createServer(app);
+
+const io = new Server(server, {
+  cors: {
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST"],
+  },
+});
+
 
 
 // error Handling
@@ -18,19 +37,12 @@ const verifyUser = require('./Auth/auth');
 
 //SOCKET_IO
 io.on('connection', socket => {
+  console.log(`User Connected: ${socket.id}`);
   socket.on('message', ({ name, message }) => {
-    console.log('HERE>>>>>');
     io.emit('message', { name, message })
   })
 })
 
-
-
-//App using express & JSON
-const PORT = process.env.PORT || 3002;
-const app = express();
-app.use(cors());
-app.use(express.json());
 
 
 // MongoDB
@@ -172,4 +184,5 @@ app.use(errorHandler);
 
 
 
-app.listen(PORT, () => console.log(`listening on ${PORT}`));
+(app, server).listen(PORT, () => console.log(`app listening on ${PORT}`));
+// http.listen(3000, () => console.log(`http listening on 3003`));
