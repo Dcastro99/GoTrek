@@ -10,6 +10,7 @@ import ProfilePage from './pages/ProfilePage.js';
 import TrailDetailPage from './pages/TrailDetailPage.js';
 import HomePage from './pages/HomePage';
 import Trails from '../../frontend/src/components/TrailCard'
+import Chat from '../src/components/Socket-io/index'
 import './assets/styles/App.css'
 
 class App extends React.Component {
@@ -71,6 +72,7 @@ class App extends React.Component {
               <Route exact path='/explore' element={< ExplorePage />} />
               <Route exact path='/profile' element={< ProfilePage />} />
               <Route exact path='/trail' element={< TrailDetailPage />} />
+              <Route exact path='/chat' element={< Chat />} />
             </>
           )}
           <Route exact path='/about' element={< AboutUsPage />} />
