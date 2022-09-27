@@ -42,7 +42,7 @@ class Profile extends React.Component {
 
     const { isLoading, user } = this.props.auth0;
     console.log('GARBAGE>>>', user);
-    console.log('COMPLETE!!', this.props.auth0);
+    // console.log('COMPLETE!!', this.props.auth0);
     if (isLoading) {
       return <div>Loading ...</div>;
     }

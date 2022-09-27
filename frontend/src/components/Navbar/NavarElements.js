@@ -23,8 +23,21 @@ export const LogoContainer = styled.div`
 
 export const NavLogo = styled(linkRouter)`
     cursor: pointer;
+    // border: 2px solid black;
     img {
         width: 90px;
+        border-radius: 10px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+`;
+export const NavLogo2 = styled(linkRouter)`
+    cursor: pointer;
+    // border: 2px solid black;
+    img {
+        width: 50px;
         border-radius: 10px;
     }
 

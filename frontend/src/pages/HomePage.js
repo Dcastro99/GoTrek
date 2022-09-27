@@ -5,10 +5,10 @@ import Splash from '../components/Splash';
 import Footer from '../components/Footer';
 // import Review from '../components/Reviews';
 
-function HomePage() {
+function HomePage(props) {
   return (
     <div>
-      <Navbar />
+      <Navbar auth0={props.auth0} />
       <Splash />
       <Footer />
     </div>

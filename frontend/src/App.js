@@ -63,19 +63,19 @@ class App extends React.Component {
               <Route
                 path="/"
                 element={
-                  <HomePage allTrails={this.state.allTrails} />
+                  <HomePage allTrails={this.state.allTrails} auth0={this.props.auth0} />
                 }
               />
               <Route path="Trails" element={<Trails />} />
               {/* <Route exact path='/signup' element={< SignUpPage />} /> */}
               {/* <Route exact path='/login' element={< LoginPage />} /> */}
-              <Route exact path='/explore' element={< ExplorePage />} />
-              <Route exact path='/profile' element={< ProfilePage />} />
-              <Route exact path='/trail' element={< TrailDetailPage />} />
-              <Route exact path='/chat' element={< Chat />} />
+              <Route exact path='/explore' element={< ExplorePage auth0={this.props.auth0} />} />
+              <Route exact path='/profile' element={< ProfilePage auth0={this.props.auth0} />} />
+              <Route exact path='/trail' element={< TrailDetailPage auth0={this.props.auth0} />} />
+              <Route exact path='/chat' element={< Chat auth0={this.props.auth0} />} />
             </>
           )}
-          <Route exact path='/about' element={< AboutUsPage />} />
+          <Route exact path='/about' element={< AboutUsPage auth0={this.props.auth0} />} />
         </Routes>
       </Router>
     );
