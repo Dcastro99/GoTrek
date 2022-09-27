@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { CarouselMainContainer, CarouselWrapper, CarouselImage } from './CarouselElements';
 import SearchBar from '../SearchBar';
 import banner1 from '../../assets/images/carousel/banner.jpg';

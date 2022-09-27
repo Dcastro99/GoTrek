@@ -8,8 +8,11 @@ export const NavbarContainer = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+<<<<<<< HEAD
+=======
     /* background-color: lightgreen; */
     margin: 20px 0px 0px 0px
+>>>>>>> dev
 `;
 
 export const LogoContainer = styled.div`
@@ -18,7 +21,6 @@ export const LogoContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid black; */
 `;
 
 export const NavLogo = styled(linkRouter)`
@@ -42,7 +44,6 @@ export const NavMenuContainer = styled.ul`
     justify-content: center;
     list-style: none;
     text-align: center;
-    border: 2px solid black;
 `;
 
 export const NavMenuLinksContainer = styled.div`
@@ -51,7 +52,6 @@ export const NavMenuLinksContainer = styled.div`
     justify-content: space-around;
     width: 50%;
     margin-right: 180px;
-    border: 2px solid black;
 `;
 
 export const NavMenuLink = styled(linkRouter)`
@@ -78,7 +78,6 @@ export const NavSignupContainer = styled.div`
     align-items: center;
     justify-content: right;
     align-items: center;
-    /* border: 2px solid black; */
     padding-right: 100px;
 `;
 
