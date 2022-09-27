@@ -36,8 +36,8 @@ function Footer() {
             <FooterLinkTitle>
               My Account
             </FooterLinkTitle>
-            <FooterLink to="/signup" target="_blank">Log in</FooterLink>
-            <FooterLink to='/signup' target="_blank">Sign Up</FooterLink>
+            {/* <FooterLink to="/signup" target="_blank">Log in</FooterLink>
+            <FooterLink to='/signup' target="_blank">Sign Up</FooterLink> */}
             <FooterLink to='/profile' target="_blank">Profile</FooterLink>
           </FooterLinkColumn>
         </FooterLinkContainer>
@@ -51,7 +51,7 @@ function Footer() {
             </SocialMediaTitle>
             <SocialMediaIcons>
               <SocialA href="https://www.facebook.com/" target="_blank">
-                  <FaFacebook />
+                <FaFacebook />
               </SocialA>
               <SocialA href="https://www.instagram.com" target="_blank">
                 <FaInstagram />

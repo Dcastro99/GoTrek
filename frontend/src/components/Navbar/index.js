@@ -1,6 +1,8 @@
 import React from 'react'
-import { NavbarContainer, NavMenuContainer, NavMenuLinksContainer, NavMenuLink, NavSignupContainer, LogoContainer, NavLogo, NavBtnLink } from './NavarElements';
+import { NavbarContainer, NavMenuContainer, NavMenuLinksContainer, NavMenuLink, NavSignupContainer, LogoContainer, NavLogo, Link1, Link2 } from './NavarElements';
 import logo from '../../assets/images/GoTrek-4.png';
+// import userEvent from '@testing-library/user-event';
+import LogoutButton from '../../components/Logout/index';
 
 function Navbar() {
   return (
@@ -18,9 +20,11 @@ function Navbar() {
         </NavLogo>
       </LogoContainer>
       <NavSignupContainer>
-        <NavBtnLink to='/signup'>Signup</NavBtnLink>
+        <Link1>
+          <LogoutButton />
+        </Link1>
       </NavSignupContainer>
-    </NavbarContainer>
+    </NavbarContainer >
   )
 }
 

@@ -1,0 +1,101 @@
+.welcomeCont {
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/logo-w/o.png) no-repeat center center fixed;
+
+}
+
+.welcomeDiv {
+  color: black;
+  margin-bottom: 7rem;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+
+  background-color: rgba(223, 223, 223, 0.418);
+}
+
+#welcomeH1 {
+  margin: 3rem 0 !important;
+}
+
+
+:root {
+  --characters: 17;
+}
+
+.name-animation {
+  margin-bottom: 3rem;
+  height: 4rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: rgba(123, 124, 124, 0.501);
+  font-family: monospace;
+  overflow: hidden;
+}
+
+.typewriter {
+  color: rgb(38, 190, 204);
+  width: 0;
+  font-size: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: blinking, typing;
+  animation-duration: 0.5s, 5s;
+  animation-timing-function: linear, steps(var(--characters));
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blinking {
+  from {
+      border-right: 3px solid transparent;
+  }
+
+  to {
+      border-right: 3px solid #d7b94c;
+      ;
+  }
+}
+
+@keyframes typing {
+
+  80%,
+  100% {
+      width: calc(var(--characters) * 1ch);
+  }
+}
+
+@media (max-width:600px) {
+  .name-animation {
+      width: 100%;
+  }
+
+  .welcomeDiv {
+      width: 93%;
+  }
+
+  .explanation h5 {
+      font-size: 1rem !important;
+  }
+
+  .welcomeCont {
+      margin: 2rem 0 0 0;
+      height: 100vh;
+  }
+
+  .typewriter {
+      font-size: 1.5rem;
+  }
+}

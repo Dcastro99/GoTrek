@@ -1,27 +1,83 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage.js';
-import SignUpPage from './pages/SignUpPage.js';
+import ReactLoading from 'react-loading';
+import { withAuth0 } from '@auth0/auth0-react';
+import Welcome from '../../frontend/src/components/Welcome/index';
+import axios from 'axios';
 import ExplorePage from './pages/ExplorePage.js';
 import AboutUsPage from './pages/AboutUsPage.js';
 import ProfilePage from './pages/ProfilePage.js';
 import TrailDetailPage from './pages/TrailDetailPage.js';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import HomePage from './pages/HomePage';
+import Trails from '../../frontend/src/components/TrailCard'
+import './assets/styles/App.css'
 
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      allTrails: [],
+    };
+  }
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route exact path='/' element={< HomePage />} />
-        <Route exact path='/signup' element={< SignUpPage />} />
-        <Route exact path='/explore' element={< ExplorePage />} />
-        <Route exact path='/about' element={< AboutUsPage />} />
-        <Route exact path='/profile' element={< ProfilePage />} />
-       <Route exact path='/trail' element={< TrailDetailPage />} />
-      </Routes>
-    </Router>
-  );
+  componentDidMount() {
+    this.handleGetAllTrails();
+  }
+  handleGetAllTrails = async () => {
+    const config = {
+      baseURL: `${process.env.REACT_APP_HEROKU_URL}`,
+      method: 'get',
+    };
+    const res = await axios(config);
+    // console.log('res', res.data);
+    this.setState({ allTrails: res.data });
+    // console.log('res>>>>>>>>', res.data)
+  };
+
+  render() {
+    const { isLoading } = this.props.auth0;
+
+    if (isLoading) {
+      return (
+        <div id="lodingDiv">
+          <ReactLoading
+            id="loading"
+            type={'spokes'}
+            color={'green'}
+            height={667}
+            width={100}
+          />
+        </div>
+      );
+    }
+
+    // handleGetAllTrails={this.handleGetAllTrails} 
+    return (
+      <Router>
+        <Routes>
+          {!this.props.auth0.isAuthenticated ? (
+            <Route exact path='/' element={<Welcome auth0={this.props.auth0} />} />
+          ) : (
+            <>
+              <Route
+                path="/"
+                element={
+                  <HomePage allTrails={this.state.allTrails} />
+                }
+              />
+              <Route path="Trails" element={<Trails />} />
+              {/* <Route exact path='/signup' element={< SignUpPage />} /> */}
+              {/* <Route exact path='/login' element={< LoginPage />} /> */}
+              <Route exact path='/explore' element={< ExplorePage />} />
+              <Route exact path='/profile' element={< ProfilePage />} />
+              <Route exact path='/trail' element={< TrailDetailPage />} />
+            </>
+          )}
+          <Route exact path='/about' element={< AboutUsPage />} />
+        </Routes>
+      </Router>
+    );
+  }
 }
 
-export default App;
+export default withAuth0(App);
