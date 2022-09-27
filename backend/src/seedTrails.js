@@ -28,7 +28,6 @@ const seed = async () => {
     trailName: 'Twin Falls',
     location: '47600 SE 159th StNorth Bend, WA 98045',
     type: 'hike',
-    class: '3',
     length: '2.5 Miles',
     elevationGain: '636ft'
   });
