@@ -37,7 +37,7 @@ function Chat(props) {
     return chat.map(({ name, message }, index) => (
       <div key={index}>
         <h3>
-          {user.given_name}: <span>{message}</span>
+          {user.given_name}: <span id='chatmessage'>{message}</span>
         </h3>
       </div>
     ))
@@ -46,14 +46,15 @@ function Chat(props) {
   return (
 
     <>
-      <div className="card">
+      <div id='Chatcard' >
         <form id='cardForm' onSubmit={onMessageSubmit}>
-          <h1>{user.name}</h1>
+          <h1 id='Titleuser'>{user.name}</h1>
           {/* <div className="name-field">
 
           <TextField name="name" onChange={(e) => onTextChange(e)} value={user.name} label="Name" />
-        </div> */}
-          <div>
+          </div> */}
+          <div id='textField'></div>
+          <div id='FormWrapper'>
             <TextField
               name="message"
               onChange={(e) => onTextChange(e)}
@@ -63,7 +64,7 @@ function Chat(props) {
               label="Message"
             />
           </div>
-          <button id='button'>Send Message</button>
+          <button id='Chatbutton'>Send Message</button>
         </form>
         <div className="render-chat">
           <h1>GoTrek Chat</h1>

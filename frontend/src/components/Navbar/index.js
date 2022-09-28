@@ -49,7 +49,6 @@ function Navbar(props) {
         </Modal.Header>
         <Modal.Body id='chatBody'>
           < Chat auth0={props.auth0} />
-
         </Modal.Body>
       </Modal>
 
