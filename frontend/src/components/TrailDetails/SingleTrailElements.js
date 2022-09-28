@@ -111,7 +111,7 @@ export const TrailDescription = styled.div`
  border: 2px solid black;
  border-radius: 10px;
  height: 200px;
- width: 100%
+ width: 100%;
 
 
 `;
@@ -209,7 +209,7 @@ img {
 }
 border: 2px solid red;
 border-radius: 10px;
-margin-left: 10px
+margin-left: 10px;
 `;
 export const WriteReviewContainer = styled.div`
 border: 2px solid black;
@@ -217,7 +217,7 @@ border: 2px solid black;
  border-radius: 10px;
  height: 100px;
  width: 100%;
- margin-bottom: 15px
+ margin-bottom: 15px;
 `;
 
 export const WriteReview = styled.div`
@@ -246,7 +246,7 @@ export const ReviewMap = styled.div`
 }
 border: 2px solid red;
 border-radius: 10px;
-margin-left: 10px
+margin-left: 10px;
 `;
 
 
@@ -272,7 +272,7 @@ export const ReviewsContainer2 = styled.div`
 //  border-radius: 10px;
  height: 200px;
  width: 100%;
- margin-bottom: 15px
+ margin-bottom: 15px;
   `;
 
 
@@ -298,7 +298,7 @@ height: 200px;
 // margin: 25px;
 border: 2px solid black;
 border-radius: 10px;
- margin-bottom: 15px
+ margin-bottom: 15px;
  `;
 
 export const TrailInfo = styled.div`
@@ -307,7 +307,7 @@ height: 200px;
 // margin: 25px;
 border: 2px solid black;
 border-radius: 10px;
- margin-bottom: 15px
+ margin-bottom: 15px;
 `;
 
 export const TrailCardsWrapper = styled.div`

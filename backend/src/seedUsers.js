@@ -8,8 +8,8 @@ const USER = require('./models/users');
 
 const seedUser = async () => {
   await USER.create({
-    title: String,
-    trails: ['Contains trails'],
+    username: 'Mickey Mouse',
+    email: 'disney@desny.com'
   });
 
   mongoose.disconnect();

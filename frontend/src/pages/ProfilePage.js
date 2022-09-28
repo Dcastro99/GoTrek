@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 function ProfilePage(props) {
   return (
     <div>
-      <Navbar />
+      <Navbar auth0={props.auth0} />
       <Profile handleGetAllTrails={props.handleGetAllTrails} />
       <Footer />
     </div>

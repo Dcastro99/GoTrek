@@ -1,14 +1,14 @@
 import React from 'react'
-import  Navbar  from '../components/Navbar';
+import Navbar from '../components/Navbar';
 import About from '../components/AboutUs';
 import Footer from '../components/Footer';
 
-function AboutUsPage() {
+function AboutUsPage(props) {
   return (
     <div>
-        <Navbar />
-        <About />
-        <Footer />
+      <Navbar auth0={props.auth0} />
+      <About />
+      <Footer />
     </div>
   )
 }

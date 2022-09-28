@@ -1,4 +1,4 @@
-#button {
+#loginBtn {
   
   /* width: 120px; */
   color:rgb(255, 255, 255);
@@ -6,6 +6,7 @@
   background:linear-gradient(to right,rgb(126, 126, 126), rgb(67, 67, 66));
   margin-bottom: 10px;
   transition: all 0.2s ease-in-out;
+  width:20%;
   border: 1px solid  rgb(58, 122, 35);
 }
 #button:hover {

@@ -14,6 +14,6 @@ const devSchema = new Schema({
   admin: Boolean,
 });
 
-const DEV = mongoose.model('dev', devSchema);
+const userDev = mongoose.model('dev', devSchema);
 
-module.exports = DEV;
+module.exports = userDev;

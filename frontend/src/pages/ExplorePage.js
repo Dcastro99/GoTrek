@@ -3,12 +3,12 @@ import Navbar from '../components/Navbar';
 import Explore from '../components/Explore';
 import Footer from '../components/Footer';
 
-function ExplorePage() {
+function ExplorePage(props) {
   return (
     <div>
-        <Navbar />
-        <Explore />
-        <Footer />
+      <Navbar auth0={props.auth0} />
+      <Explore />
+      <Footer />
     </div>
   )
 }

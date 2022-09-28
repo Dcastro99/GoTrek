@@ -5,8 +5,8 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const userSchema = new Schema({
-  title: String,
-  trail: Array,
+  username: String,
+  email: String
 
 });
 

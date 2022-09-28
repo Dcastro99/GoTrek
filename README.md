@@ -37,3 +37,7 @@
 ## Database Schema
 
 ![Database Schema](https://user-images.githubusercontent.com/107226923/191168688-1cd71343-1491-473a-803f-2f921d24a552.png)
+
+### References
+
+- [Socket.io info](https://github.com/NikValdez/ChatAppTut)
