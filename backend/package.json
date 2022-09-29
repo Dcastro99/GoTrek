@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "backend server for GoTrek application",
   "main": "index.js",
+  "node": "v16.16.0",
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon server.js",
