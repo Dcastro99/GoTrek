@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ReactLoading from 'react-loading';
 import { withAuth0 } from '@auth0/auth0-react';
-import Welcome from '../../frontend/src/components/Welcome/index';
+import Welcome from './components/Welcome';
 import axios from 'axios';
 import ExplorePage from './pages/ExplorePage.js';
 import AboutUsPage from './pages/AboutUsPage.js';
@@ -69,7 +69,7 @@ class App extends React.Component {
                   <HomePage allTrails={this.state.allTrails} auth0={this.props.auth0} />
                 }
               />
-              <Route path="Trails" element={<Trails />} />
+              <Route path="/trails" element={<Trails />} />
               <Route exact path='/weather' element={< Weather />} />
               <Route exact path='/explore' element={< ExplorePage auth0={this.props.auth0} />} />
               <Route exact path='/profile' element={< ProfilePage auth0={this.props.auth0} />} />
