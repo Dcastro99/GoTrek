@@ -39,7 +39,7 @@ export const TopSectionContainer = styled.div`
     /* height: 200px; */
     width: 80%;
     margin: 20px 0px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* background-color: lightblue; */
 `;
 
