@@ -18,7 +18,7 @@ const Welcome = (props) => {
 
       {isLoading ?
         <div id="lodingDiv">
-          <ReactLoading id="loading" type={"spokes"} color={"blue"} height={667} width={375} />
+          <ReactLoading id="loading" type={"spokes"} color={"black"} height={667} width={375} />
         </div>
         : (<>
           <WelcomeContainer className="welcomeCont">
@@ -31,13 +31,13 @@ const Welcome = (props) => {
                 <LoginButton />
               </TitleContainer>
               <WelcomeStatement className="explanation">
-                <h5>GoTrek ... skjdhfalsdfapsoefg;lskdj<br />
+                <h5>GoTrek ... because lifes too short<br />
 
-                  <br />You wil be able to... lakdf;lsadfja;lkdsjfalksjf<br />
+                  {/* {/* <br />You wil be able to... lakdf;lsadfja;lkdsjfalksjf<br /> */}
 
-                  <br />Find a catagory...ladjfhalkdfhjlakdsflaksdfh<br />
+                  <br />Get out and Explore your world!<br />
 
-                  <br />Explore your world!<br />
+                  {/* <br />Explore your world!<br /> */}
                 </h5>
               </WelcomeStatement>
             </WelcomeWrapper>

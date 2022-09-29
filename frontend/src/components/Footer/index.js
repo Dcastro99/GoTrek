@@ -36,8 +36,8 @@ function Footer() {
             <FooterLinkTitle>
               My Account
             </FooterLinkTitle>
-            <FooterLink to="/signup" target="_blank">Log in</FooterLink>
-            <FooterLink to='/signup' target="_blank">Sign Up</FooterLink>
+            {/* <FooterLink to="/signup" target="_blank">Log in</FooterLink>
+            <FooterLink to='/signup' target="_blank">Sign Up</FooterLink> */}
             <FooterLink to='/profile' target="_blank">Profile</FooterLink>
           </FooterLinkColumn>
         </FooterLinkContainer>
