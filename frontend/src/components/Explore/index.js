@@ -12,7 +12,7 @@ function Explore() {
             {/* <h1>Explore Page</h1> */}
         </ExploreWrapper>
     </ExploreContainer>
-  )
+  );
 }
 
 export default Explore;

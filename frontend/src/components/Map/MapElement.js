@@ -6,7 +6,7 @@ export const MapContainer = styled.div`
     justify-content: center;
     width: 80%;
     height: 100%;
-    border: 2px solid red;
+    // border: 2px solid red;
     background: none;
 `;
 
