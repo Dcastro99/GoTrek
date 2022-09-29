@@ -1,7 +1,7 @@
 .reviewTextBox {
   display: flex;
   flex-direction: column;
-  justify-content:start;
+  justify-content:flex-start;
   /* background-color: rgb(25, 109, 57); */
   /* width:500px; */
   height:200px;
