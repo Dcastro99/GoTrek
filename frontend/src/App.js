@@ -23,7 +23,7 @@ class App extends React.Component {
       allTrails: [],
     };
   }
-
+  //fixed env
   componentDidMount() {
     this.handleGetAllTrails();
   }
