@@ -8,11 +8,8 @@ export const NavbarContainer = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-<<<<<<< HEAD
-=======
     /* background-color: lightgreen; */
     margin: 20px 0px 0px 0px
->>>>>>> dev
 `;
 
 export const LogoContainer = styled.div`
