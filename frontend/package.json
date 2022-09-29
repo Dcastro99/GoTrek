@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "node": "v16.16.0",
   "dependencies": {
     "@auth0/auth0-react": "^1.10.0",
     "@emotion/react": "^11.10.4",
