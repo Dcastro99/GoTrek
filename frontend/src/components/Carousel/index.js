@@ -5,9 +5,6 @@ import banner1 from '../../assets/images/carousel/banner.jpg';
 import banner2 from '../../assets/images/carousel/banner2.png';
 import banner3 from '../../assets/images/carousel/banner3.png';
 import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import '../../assets/styles/Carousel.css';
-
 
 function ControlledCarousel() {
 
