@@ -9,6 +9,9 @@ import AboutUsPage from './pages/AboutUsPage.js';
 import ProfilePage from './pages/ProfilePage.js';
 import TrailDetailPage from './pages/TrailDetailPage.js';
 import HomePage from './pages/HomePage';
+import Weather from './components/Weather/src/Weather';
+// import Trails from '../../frontend/src/components/TrailCard'
+import './assets/styles/App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -67,6 +70,8 @@ class App extends React.Component {
               <Route exact path='/explore' element={< ExplorePage />} />
               <Route exact path='/profile' element={< ProfilePage />} />
               <Route exact path='/trail' element={< TrailDetailPage />} />
+              <Route exact path='/weather' element={< Weather />} />
+
             </>
           )}
           <Route exact path='/about' element={< AboutUsPage />} />
