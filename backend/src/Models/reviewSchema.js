@@ -7,7 +7,7 @@ const { Schema } = mongoose;
 
 const reviewSchema = new Schema({
     username: String,
-    number: NUMBER,
+    star: Number,
     review: String,
 });
 

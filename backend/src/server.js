@@ -58,6 +58,7 @@ db.once('open', function () {
 const Trail = require('./Models/trailSchema')
 const UserDev = require('./Models/dev');
 const User = require('./Models/users')
+const Review = require('./Models/reviewSchema')
 
 // Landing path
 app.get('/', handleGetTrails)
@@ -73,6 +74,7 @@ app.get('/trails/:id', handleGetOneTrail)
 // app.put('/dev/:id', handleUpdateDev);
 // app.get('/user', handleGetUser);
 app.post('/user', handlePostUser);
+app.post('/review', handlePostreviews);
 
 
 
@@ -110,7 +112,8 @@ app.post('/user', handlePostUser);
 // }
 
 
-//TRAIL Functions
+////>>>>>>>>>>>>>>>    TRAILS     >>>>>>>>>>>>>////
+
 async function handleGetTrails(req, res) {
   try {
     const trails = await Trail.find(req.trailName);
@@ -147,28 +150,37 @@ async function handleGetOneTrail(req, res) {
 //   }
 // }
 
+////>>>>>>>>>>>>>>>    USER      >>>>>>>>>>>>>////
 
 async function handlePostUser(req, res) {
-  // const { username, email } = req.user;
-  // console.log('DATAOBJ', req.body.user);
-  // const { name, email } = req.body.user;
-  // console.log('NEW USER', name, email);
+
   try {
     const checkUser = await User.findOne({ ...req.body, email: req.body.user.email })
-
     console.log('user created!', checkUser);
-
     if (!checkUser) {
       res.status(200).send('user created!')
       const newUser = await User.create({ ...req.body, username: req.body.user.name, email: req.body.user.email })
     } else {
       res.status(500).send('user already exists!!');
     }
-
   } catch (e) {
     res.status(500).send('server error');
   }
 }
+
+////>>>>>>>>>>>>>>>     REVIEWS    >>>>>>>>>>>>>////
+
+async function handlePostreviews(req, res) {
+  console.log('AAAAHHHH!!');
+  // const { title, description, status } = req.body;
+  try {
+    const newReview = await Review.create({ ...req.body, email: req.user.email });
+    res.status(200).send(newReview);
+  } catch (e) {
+    res.status(500).send('server error');
+  }
+}
+
 
 
 //Landing page for testing purposes
