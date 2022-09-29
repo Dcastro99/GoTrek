@@ -37,7 +37,7 @@ function Chat(props) {
     return chat.map(({ name, message }, index) => (
       <div key={index}>
         <h3>
-          <p id='userName'>{user.given_name}:</p> <span id='chatmessage'>{message}</span>
+          <p id='userName'>{user.name}:</p> <span id='chatmessage'>{message}</span>
         </h3>
       </div>
     ))
