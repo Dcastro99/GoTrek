@@ -48,7 +48,7 @@ function Chat(props) {
     <>
       <div id='Chatcard' >
         <form id='cardForm' onSubmit={onMessageSubmit}>
-          <h1 id='Titleuser'>{user.name}</h1>
+          <h3 id='Titleuser'>{user.name}</h3>
           {/* <div className="name-field">
 
           <TextField name="name" onChange={(e) => onTextChange(e)} value={user.name} label="Name" />
