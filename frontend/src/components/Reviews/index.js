@@ -1,15 +1,23 @@
 import "./ReviewTrails.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 //Idea from https://react-icons.github.io/react-icons/icons?name=ai
-import image from '../../assets/images/pic1.jpg';
+// import image from '../../assets/images/pic1.jpg';
+import axios from 'axios';
+import Form from 'react-bootstrap/Form';
+import '../../assets/styles/review.css';
+
+
 
 export default function ReviewTrails(props) {
   const [number, setNumber] = useState(0);
   const [hoverStar, setHoverStar] = useState(undefined);
+  const [review, setReview] = useState('');
+  console.log('STARS::', number);
+
 
   const handleText = () => {
-    console.log('NUMBER::', number);
+    // console.log('NUMBER::', number);
     switch (number || hoverStar) {
       case 0:
         return "Evaluate";
@@ -43,21 +51,62 @@ export default function ReviewTrails(props) {
         return "Comment here...";
     }
   };
+
+
+
+  const handleCreateReview = async (newReview) => {
+    if (props.auth0.isAuthenticated) {
+      const res = await props.auth0.getIdTokenClaims();
+      const jwt = res.__raw;
+
+      // leave this console here in order to grab your token for backend testing in Thunder Client
+      console.log('token: ', jwt);
+
+      const config = {
+        headers: { Authorization: `Bearer ${jwt}` },
+        method: 'POST',
+        baseURL: `${process.env.REACT_APP_HEROKU_URL}`,
+        url: '/review',
+        data: newReview
+      };
+
+      const reviewResponse = await axios(config);
+
+      console.log('Review from DB: ', reviewResponse.data);
+
+
+    }
+  };
+  const { user } = props.auth0;
+  const handleSubmit = (event) => {
+    console.log('OK??::', event.target.review.value);
+    event.preventDefault();
+    setReview('');
+    const newReview = {
+      username: user.name,
+      review: event.target.review.value,
+      star: number
+    };
+    console.log('ALMOST!!::', newReview);
+    handleCreateReview(newReview);
+
+  };
+
   return (
     <div className="review">
       <div className="position">
         <div className="content">
           <div className="trail">
-            <img
+            {/* <img
               style={{ width: 60, height: 60, objectFit: "cover" }}
               // src="https://www.pexels.com/photo/person-waking-on-hill-554609/"
               src={image}
               alt="Trail Pic"
-            />
-            <h1>Go Trek Trails</h1>
+            /> */}
+            <h1 id='Title'>Trails Reviews</h1>
           </div>
           <div>
-            <h1>{handleText()}</h1>
+            <h1 >{handleText()}</h1>
             {Array(5)
               .fill()
               .map((_, index) =>
@@ -78,10 +127,23 @@ export default function ReviewTrails(props) {
                 )
               )}
           </div>
-          <textarea placeholder={handlePlaceHolder()}></textarea>
-          <button className={` ${!number && "disabled"} `}>Submit</button>
+          <Form className='reviewFrom' onSubmit={(e) => { handleSubmit(e) }}>
+            <Form.Group className="mb-3" controlId="review">
+              <Form.Control
+
+                className='reviewTextBox'
+                type='text'
+                value={review}
+                onChange={(e) => { setReview(e.target.value) }}
+                placeholder={handlePlaceHolder()} />
+
+
+            </Form.Group>
+            <button type='submit' onChange={(e) => { setReview(e.target.value) }} className={` ${!number && "disabled"} `}>Submit</button>
+          </Form>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
+
