@@ -1,0 +1,19 @@
+#loginBtn {
+  
+  /* width: 120px; */
+  color:rgb(255, 255, 255);
+  border-radius: 10px;
+  background:linear-gradient(to right,rgb(126, 126, 126), rgb(67, 67, 66));
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+  width:20%;
+  border: 1px solid  rgb(58, 122, 35);
+}
+#button:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff;
+  border: 1px solid rgb(58, 122, 35);
+  color: black;
+  border: 2px solid black;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+};
