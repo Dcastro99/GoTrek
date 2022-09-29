@@ -6,11 +6,11 @@ import Map from '../Map/index';
 // import SingleTrailImage from '../TrailCards/index';
 import { TrailCard, CardFront, TrailImageContainer, CardBack, TrailInformation } from '../TrailCards/TrailCardsElements';
 import photo2 from '../../assets/images/hike.jpg';
-import Review from '../Reviews/index';
+import Reviews from '../Reviews/index';
 
 
 
-function SingleTrail() {
+function SingleTrail(props) {
   return (
     <>
       <SearchBarContainer>
@@ -82,7 +82,7 @@ function SingleTrail() {
 
               <WriteReviewContainer>
                 <WriteReview>
-                  <Review />
+                  <Reviews auth0={props.auth0} />
                 </WriteReview>
               </WriteReviewContainer>
 

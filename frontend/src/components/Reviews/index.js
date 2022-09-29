@@ -130,14 +130,11 @@ export default function ReviewTrails(props) {
           <Form className='reviewFrom' onSubmit={(e) => { handleSubmit(e) }}>
             <Form.Group className="mb-3" controlId="review">
               <Form.Control
-
                 className='reviewTextBox'
                 type='text'
                 value={review}
                 onChange={(e) => { setReview(e.target.value) }}
                 placeholder={handlePlaceHolder()} />
-
-
             </Form.Group>
             <button type='submit' onChange={(e) => { setReview(e.target.value) }} className={` ${!number && "disabled"} `}>Submit</button>
           </Form>
