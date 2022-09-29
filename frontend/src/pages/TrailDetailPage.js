@@ -2,13 +2,15 @@ import React from 'react'
 import Navbar from '../components/Navbar';
 import SingleTrail from '../components/TrailDetails';
 import Footer from '../components/Footer';
+import Reviews from '../components/Reviews/index.js'
 
 
-function SingleTrailPage() {
+function SingleTrailPage(props) {
   return (
     <div>
-      <Navbar />
-      <SingleTrail />
+      <Navbar auth0={props.auth0} />
+      <SingleTrail auth0={props.auth0} />
+      <Reviews auth0={props.auth0} />
 
       <Footer />
     </div>

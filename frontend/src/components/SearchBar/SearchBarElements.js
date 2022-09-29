@@ -6,7 +6,6 @@ export const SearchBarContainer = styled.div`
     justify-content: space-around;
     width: 30%;
     /* background: lightblue; */
-    border: 1px solid black;
     border-radius: 10px;
     margin-top: 30px;
     padding: 5px;

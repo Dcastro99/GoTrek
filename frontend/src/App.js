@@ -13,6 +13,8 @@ import Weather from './components/Weather/src/Weather';
 import './assets/styles/App.css';
 import Trails from '../../frontend/src/components/TrailCard'
 
+import Chat from '../src/components/Socket-io/index'
+import './assets/styles/App.css'
 
 class App extends React.Component {
   constructor(props) {
@@ -64,20 +66,18 @@ class App extends React.Component {
               <Route
                 path="/"
                 element={
-                  <HomePage allTrails={this.state.allTrails} />
+                  <HomePage allTrails={this.state.allTrails} auth0={this.props.auth0} />
                 }
               />
               <Route path="Trails" element={<Trails />} />
-              {/* <Route exact path='/signup' element={< SignUpPage />} /> */}
-              {/* <Route exact path='/login' element={< LoginPage />} /> */}
-              <Route exact path='/explore' element={< ExplorePage />} />
-              <Route exact path='/profile' element={< ProfilePage />} />
-              <Route exact path='/trail' element={< TrailDetailPage />} />
               <Route exact path='/weather' element={< Weather />} />
-
+              <Route exact path='/explore' element={< ExplorePage auth0={this.props.auth0} />} />
+              <Route exact path='/profile' element={< ProfilePage auth0={this.props.auth0} />} />
+              <Route exact path='/trail' element={< TrailDetailPage auth0={this.props.auth0} />} />
+              <Route exact path='/chat' element={< Chat auth0={this.props.auth0} />} />
             </>
           )}
-          <Route exact path='/about' element={< AboutUsPage />} />
+          <Route exact path='/about' element={< AboutUsPage auth0={this.props.auth0} />} />
         </Routes>
       </Router>
     );

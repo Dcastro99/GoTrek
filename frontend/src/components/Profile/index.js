@@ -13,20 +13,25 @@ class Profile extends React.Component {
   }
 
   componentDidMount() {
-    this.handleGetUserDev();
+    this.handleGetUser();
   }
-  handleGetUserDev = async (coin) => {
+
+  handleGetUser = async () => {
+
     if (this.props.auth0.isAuthenticated) {
       const res = await this.props.auth0.getIdTokenClaims();
       const jwt = res.__raw;
 
       const config = {
         headers: { Authorization: `Bearer ${jwt}` },
-        method: 'get',
+        method: 'POST',
         baseURL: `${process.env.REACT_APP_HEROKU_URL}`,
+        url: '/user',
+        data: this.props.auth0
       };
       const rest = await axios(config);
-      this.setState({ userDev: rest.data[0] });
+      this.setState({ user: rest.data[0] });
+      console.log('USER CONFIG', `${config}`);
     }
   };
 
@@ -36,6 +41,8 @@ class Profile extends React.Component {
   render() {
 
     const { isLoading, user } = this.props.auth0;
+    console.log('GARBAGE>>>', user);
+    // console.log('COMPLETE!!', this.props.auth0);
     if (isLoading) {
       return <div>Loading ...</div>;
     }

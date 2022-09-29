@@ -6,10 +6,9 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const reviewSchema = new Schema({
-    trailName: String,
-    trailRating: NUMBER,
+    username: String,
+    number: NUMBER,
     review: String,
-    author: String,
 });
 
 const reviewModel = mongoose.model('review', reviewSchema);

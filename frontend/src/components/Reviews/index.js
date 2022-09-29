@@ -4,11 +4,12 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 //Idea from https://react-icons.github.io/react-icons/icons?name=ai
 import logo from '../../assets/images/GoTrek-4.png';
 
-export default function ReviewTrails() {
+export default function ReviewTrails(props) {
   const [number, setNumber] = useState(0);
   const [hoverStar, setHoverStar] = useState(undefined);
 
   const handleText = () => {
+    console.log('NUMBER::', number);
     switch (number || hoverStar) {
       case 0:
         return "Evaluate";

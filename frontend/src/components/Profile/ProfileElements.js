@@ -59,7 +59,8 @@ display: flex;
         justify-content: center;
     img{
         
-        width: 100%;
+        width: 200px;
+        heith: 200px;
     }
 `;
 export const ProfileInformation = styled.div`

@@ -36,8 +36,8 @@ function ReactMap() {
           {...viewport}
           mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
           // select map style: these come from your custom maps on mapbox
-          mapStyle='mapbox://styles/mapbox3030/cl8i60t5r000b14q9ggkqut48'
-          // mapStyle='mapbox://styles/mapbox3030/cl8ia5us3000915owh9k1xxhu'
+          // mapStyle='mapbox://styles/mapbox3030/cl8i60t5r000b14q9ggkqut48'
+          mapStyle='mapbox://styles/mapbox3030/cl8ia5us3000915owh9k1xxhu'
           onViewportChange={viewport => {
             setViewport(viewport);
           }}
