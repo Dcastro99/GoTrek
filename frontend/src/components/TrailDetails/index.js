@@ -98,7 +98,7 @@ function SingleTrail(props) {
 
               <WriteReviewContainer>
                 <WriteReview>
-                  <Review />
+                  <Reviews auth0={props.auth0} />
                 </WriteReview>
               </WriteReviewContainer>
 

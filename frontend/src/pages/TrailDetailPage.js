@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Navbar from '../components/Navbar';
 import SingleTrail from '../components/TrailDetails';
 import Footer from '../components/Footer';
-import Reviews from '../components/Reviews/index.js'
+// import Reviews from '../components/Reviews/index.js'
 
 import { Link, useParams, useLocation } from 'react-router-dom';
 

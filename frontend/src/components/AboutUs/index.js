@@ -3,9 +3,6 @@ import { AboutContainer, AboutWrapper, AboutDev, AboutGoTrek, SocialMedia } from
 import Card from 'react-bootstrap/Card';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "mdb-react-ui-kit/dist/css/mdb.min.css";
-// https://mdbootstrap.com/docs/react/getting-started/installation/
 import '../../assets/styles/aboutUs.css'
 
 import CardGroup from "react-bootstrap/CardGroup";

@@ -21,7 +21,7 @@
   justify-content: space-evenly;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 
-  background-color: rgba(223, 223, 223, 0.418);
+  background-color: rgba(223, 223, 223, 0.378);
 }
 
 #welcomeH1 {
@@ -35,11 +35,11 @@
 
 .name-animation {
   margin-bottom: 3rem;
-  height: 4rem;
+  height: 7rem;
   display: flex;
   justify-content: left;
   align-items: center;
-  background-color: rgba(123, 124, 124, 0.501);
+  /* background-color: rgba(123, 124, 124, 0.501); */
   font-family: monospace;
   overflow: hidden;
 }
@@ -64,7 +64,7 @@
   }
 
   to {
-      border-right: 3px solid #d7b94c;
+      border-right: 3px solid #5c5744;
       ;
   }
 }

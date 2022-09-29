@@ -31,7 +31,7 @@ class Profile extends React.Component {
       };
       const rest = await axios(config);
       this.setState({ user: rest.data[0] });
-      console.log('USER CONFIG', `${config}`);
+      // console.log('USER CONFIG', rest.data);
     }
   };
 

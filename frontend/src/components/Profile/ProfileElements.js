@@ -81,7 +81,7 @@ flex-direction: column;
 align-items:left;
 justify-content: center;
 border-radius: 10px;
-border: 2px solid black;
+// border: 2px solid black;
 width: 40%;
 height: 30%;
 margin: 20px;
@@ -121,7 +121,7 @@ export const ProfileTrailCards = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    border: 2px solid black;
+    // border: 2px solid black;
     width: 100%;
     heigth: 10%;
   

@@ -6,7 +6,8 @@ import chatLogo from '../../assets/images/chat1-logo.jpeg'
 import LogoutButton from '../../components/Logout/index';
 // import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Chat from '../Socket-io/index'
+import Chat from '../Socket-io/index';
+import '../../assets/styles/Nav.css'
 
 function Navbar(props) {
   const [lgShow, setLgShow] = useState(false);
@@ -39,6 +40,7 @@ function Navbar(props) {
 
       {/* MODAL >>>>>>>>>>>>>>>>>>>>*/}
       <Modal
+        id='ChatModal'
         size="lg"
         show={lgShow}
         onHide={() => setLgShow(false)}

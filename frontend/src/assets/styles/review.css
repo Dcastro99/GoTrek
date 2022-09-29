@@ -1,0 +1,12 @@
+.reviewTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: rgb(25, 109, 57); */
+  /* width:500px; */
+  height:200px;
+}
+.reviewFrom {
+   /* background-color: rgb(25, 109, 57);  */
+   width:100%;
+}

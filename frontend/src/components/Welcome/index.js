@@ -26,12 +26,12 @@ const Welcome = (props) => {
             < WelcomeWrapper className="welcomeDiv">
               <TitleContainer>
                 <Title className='name-animation'>
-                  Welcome to GoTrek
+                  <h1 className='name-animation'>Welcome to GoTrek</h1>
                 </Title>
                 <LoginButton />
               </TitleContainer>
               <WelcomeStatement className="explanation">
-                <h5>GoTrek ... because lifes too short<br />
+                <h5>GoTrek ... because life's too short<br />
 
                   {/* {/* <br />You wil be able to... lakdf;lsadfja;lkdsjfalksjf<br /> */}
 
