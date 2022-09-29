@@ -1,22 +1,48 @@
 import React, { useState, useRef, useEffect } from 'react';
-import ReactMapGL, { Marker, Popup } from 'react-map-gl';
+import Map, { Marker, Popup, GeolocateControl } from 'react-map-gl';
 import { MapContainer, MapButton, MapText } from './MapElement';
 import 'mapbox-gl/dist/mapbox-gl.css';
+
+
 // import trailData from '../../assets/data/allTrails.json';
-import trailData from '../../assets/data/test-data.json';
+import trailData from '../../assets/data/wta-parks-data.json';
+// import trailData from '../../assets/data/test-data.json';
 
 import { FaWalking} from 'react-icons/fa';
 
 function ReactMap() {
-    const [viewport, setViewport] = useState({
-      // latitude: 47,
-      // longitude: -122,
-      // width: '100vw',
-      // height: '100vh',
-      // zoom: 5
+    
+    const [latitude, setLatitude ] = useState('');
+    const [longitude, setLongitude] = useState('');
+
+    React.useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      // setLatitude(position.coords.latitude),
+      // setLongitude(position.coords.longitude);
+      console.log(position);
+    })
+  }, []);
+
+    const { viewport, setViewport } = useState({
+      latitude: 47,
+      longitude: -122,
+      width: '100vw',
+      height: '100vh',
+      zoom: 5
     })
 
+    const data = trailData.slice(0, 100);
+
     const [selectedTrail, setSelectedTrail] = useState(null);
+
+    const geolocateControlRef = React.useCallback((ref) => {
+      if (ref) {
+        // Activate as soon as the control is loaded
+        ref.trigger();
+      }
+    }, []);
+
+    
 
     useEffect(() => {
       const listener = e => {
@@ -32,17 +58,16 @@ function ReactMap() {
 
     return (
       <MapContainer>
-        <ReactMapGL
+        <Map
           {...viewport}
           mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-          // select map style: these come from your custom maps on mapbox
           // mapStyle='mapbox://styles/mapbox3030/cl8i60t5r000b14q9ggkqut48'
           mapStyle='mapbox://styles/mapbox3030/cl8ia5us3000915owh9k1xxhu'
           onViewportChange={viewport => {
-            setViewport(viewport);
+            setViewport({...viewport});
           }}
           >
-          {trailData.map(trail => (
+          {data.map(trail => (
             <Marker 
               key={trail.name} 
               latitude={trail.coordinates.lat} 
@@ -64,17 +89,21 @@ function ReactMap() {
                 setSelectedTrail(null);
               }}
             >
-              <MapText>
+              {/* <MapText> */}
                 <h3>{selectedTrail.name}</h3>
                 <p>
                   {selectedTrail.length}
                   {selectedTrail.gain}
                   {selectedTrail.requiredPass}
                 </p>
-              </MapText>
+              {/* </MapText> */}
             </Popup>
           ) : null}
-        </ReactMapGL>
+          <GeolocateControl 
+            ref={geolocateControlRef} 
+            zoom={10}
+            />
+        </Map>
     </MapContainer>
   )
 
