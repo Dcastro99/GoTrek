@@ -2,7 +2,7 @@ import "./ReviewTrails.css";
 import { useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 //Idea from https://react-icons.github.io/react-icons/icons?name=ai
-import image from '../../assets/images/pic1.jpg';
+import logo from '../../assets/images/GoTrek-4.png';
 
 export default function ReviewTrails(props) {
   const [number, setNumber] = useState(0);
@@ -51,10 +51,10 @@ export default function ReviewTrails(props) {
             <img
               style={{ width: 60, height: 60, objectFit: "cover" }}
               // src="https://www.pexels.com/photo/person-waking-on-hill-554609/"
-              src={image}
+              src={logo}
               alt="Trail Pic"
             />
-            <h1>Go Trek Trails</h1>
+            {/* <h1>Go Trek Trails</h1> */}
           </div>
           <div>
             <h1>{handleText()}</h1>
