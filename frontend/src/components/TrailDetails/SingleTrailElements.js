@@ -307,7 +307,7 @@ margin-left: 10px;
 `;
 
 export const WriteReviewContainer = styled.div`
-// border: 2px solid black;
+ /* border: 2px solid black; */
  margin-right: 10px;
  border-radius: 10px;
 //  height: 100px;

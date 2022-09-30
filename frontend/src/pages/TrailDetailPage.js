@@ -19,8 +19,7 @@ function SingleTrailPage(props) {
     <div>
       <Navbar auth0={props.auth0} />
       <SingleTrail auth0={props.auth0} props={{location}}/>
-      <Reviews auth0={props.auth0} />
-
+      {/* <Reviews auth0={props.auth0} /> */}
       <Footer />
     </div>
   )

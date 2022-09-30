@@ -60,6 +60,7 @@ export const ButtonLink = styled(linkRouter)`
     color: white;
     border: none;
     padding: 10px;
+    text-decoration: none;
 
     &:hover {
         transform: scale(1.1);

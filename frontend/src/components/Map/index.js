@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import ReactMapGL, { Marker, Popup } from 'react-map-gl';
-import { MapContainer, MapButton, MapText } from './MapElement';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import Map, { Marker, Popup, GeolocateControl } from 'react-map-gl';
+import { MapContainer, MapButton, MapText, MapWrapper, ButtonLink } from './MapElement';
+// import { Map } from '../Map';
 // import trailData from '../../assets/data/allTrails.json';
-import trailData from '../../assets/data/test-data.json';
+// import trailData from '../../assets/data/test-data.json';
 
 import { FaWalking} from 'react-icons/fa';
 

@@ -6,7 +6,7 @@ import Map from '../Map/index';
 import { TrailCard, CardFront, TrailImageContainer, CardBack, TrailInformation, InformationColumn, InformationRow } from '../TrailCards/TrailCardsElements';
 import photo2 from '../../assets/images/hike.jpg';
 import trailData from '../../assets/data/test-data.json';
-import Review from '../Reviews/index';
+import Reviews from '../Reviews/index';
 
 import { Link, useParams, useLocation } from 'react-router-dom';
 
@@ -162,36 +162,3 @@ function SingleTrail(props) {
 }
 
 export default SingleTrail;
-
-
-
-{/* <TrailCard className='card'>
-                      <CardFront className='card-side front'>
-                        <TrailImageContainer>
-                          <img src={photo2} alt='hiking' />
-                          <h3>Title</h3>
-                        </TrailImageContainer>
-                      </CardFront>
-                      <CardBack className='card-side back'>
-                        <TrailInformation>
-                          <h5>Length: </h5>
-                          <h5>Elevation:</h5>
-                          <p>FeatureIcons:</p>
-                        </TrailInformation>
-                      </CardBack>
-                    </TrailCard>
-                    <TrailCard className='card'>
-                      <CardFront className='card-side front'>
-                        <TrailImageContainer>
-                          <img src={photo2} alt='hiking' />
-                          <h3>Title</h3>
-                        </TrailImageContainer>
-                      </CardFront>
-                      <CardBack className='card-side back'>
-                        <TrailInformation>
-                          <h5>Length: </h5>
-                          <h5>Elevation:</h5>
-                          <p>FeatureIcons:</p>
-                        </TrailInformation>
-                      </CardBack>
-                    </TrailCard> */}
