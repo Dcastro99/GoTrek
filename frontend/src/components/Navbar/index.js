@@ -19,6 +19,7 @@ function Navbar(props) {
             <NavMenuLink to='/explore'>Explore</NavMenuLink>
             <NavMenuLink to='/profile'>Profile</NavMenuLink>
             <NavMenuLink to='/about'>About</NavMenuLink>
+            {/* <NavMenuLink to='/trail'>Trail</NavMenuLink> */}
 
           </NavMenuLinksContainer>
           <NavLogo2>

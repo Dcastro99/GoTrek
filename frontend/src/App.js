@@ -72,8 +72,11 @@ class App extends React.Component {
               <Route path="/trails" element={<Trails />} />
               <Route exact path='/weather' element={< Weather />} />
               <Route exact path='/explore' element={< ExplorePage auth0={this.props.auth0} />} />
+              <Route exact path='/explore/trail/:id' element={< TrailDetailPage auth0={this.props.auth0} />} />
               <Route exact path='/profile' element={< ProfilePage auth0={this.props.auth0} />} />
-              <Route exact path='/trail' element={< TrailDetailPage auth0={this.props.auth0} />} />
+              {/* <Route exact path='/trail' element={< TrailDetailPage auth0={this.props.auth0} />} /> */}
+              <Route exact path='/trail' element={< TrailDetailPage auth0={this.props.auth0} />}/>
+              <Route exact path='/trail/:id' element={< TrailDetailPage auth0={this.props.auth0} />} />
               <Route exact path='/chat' element={< Chat auth0={this.props.auth0} />} />
             </>
           )}

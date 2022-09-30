@@ -36,11 +36,6 @@ function Weather() {
       })
       .catch(console.log);
   }
-
-  console.log(currentWeather);
-  console.log(forecast);
-
-
   return (
     <div className="container">
       <Search OnSearchChange={handleOnSearchChange} />

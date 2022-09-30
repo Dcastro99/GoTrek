@@ -22,12 +22,14 @@
   height: 400px;
   /* border: 2px solid black; */
 }
-#outlined-multiline-static {
+
+#outlined-multiline-static{
   width: 100%;
   /* background-color: black; */
 }
-#FormWrapper {
-  display: flex;
+
+#FormWrapper{
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;

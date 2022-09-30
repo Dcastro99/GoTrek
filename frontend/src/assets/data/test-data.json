@@ -1,178 +1,212 @@
 [
-    {
-      "elevation": {
-        "Highest Point": "120 ft.",
-        "Gain": "120 ft."
-      },
-      "name": "Trail 1",
-      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
-      "coordinates": {
-        "lat": "47.5890",
-        "lon": "-122.2270"
-      },
-      "length": "3.0 miles",
-      "requiredPass": "None",
-      "features": [
-        "Wildflowers/Meadows",
-        "Dogs allowed on leash",
-        "Good for kids",
-        "Lakes",
-        "Fall foliage",
-        "Coast"
-      ]
+  {
+    "elevation": {
+      "highestPoint": "120 ft.",
+      "gain": "120 ft."
     },
-    {
-      "elevation": {
-        "Highest Point": "120 ft.",
-        "Gain": "120 ft."
-      },
-      "name": "Trail 2",
-      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
-      "coordinates": {
-        "lat": "47.5890",
-        "lon": "-122.2270"
-      },
-      "length": "3.0 miles",
-      "requiredPass": "None",
-      "features": [
-        "Wildflowers/Meadows",
-        "Dogs allowed on leash",
-        "Good for kids",
-        "Lakes",
-        "Fall foliage",
-        "Coast"
-      ]
+    "name": "Luther Burbank Park",
+    "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
+    "coordinates": {
+      "lat": "47.5890",
+      "lon": "-122.2270"
     },
-    {
-      "elevation": {
-        "Highest Point": "120 ft.",
-        "Gain": "120 ft."
-      },
-      "name": "Trail 3",
-      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
-      "coordinates": {
-        "lat": "47.5890",
-        "lon": "-122.2270"
-      },
-      "length": "3.0 miles",
-      "requiredPass": "None",
-      "features": [
-        "Wildflowers/Meadows",
-        "Dogs allowed on leash",
-        "Good for kids",
-        "Lakes",
-        "Fall foliage",
-        "Coast"
-      ]
+    "length": "3.0 miles",
+    "requiredPass": "None",
+    "description": "Luther Burbank is a large park of 73 acres with three-quarters of a mile of Lake Washington waterfront. Much of the park has been left undeveloped to foster a variety of wildlife, including 135 species of birds, 50 species of waterfowl, raccoons, beaver, muskrats, tree frogs and rabbits. Many of these animals live in the wetlands that occupy the north and south ends of the park.",
+    "features": [
+      "Wildflowers/Meadows",
+      "Dogs allowed on leash",
+      "Good for kids",
+      "Lakes",
+      "Fall foliage",
+      "Coast"
+    ]
+  },
+  {
+    "elevation": {
+      "highestPoint": "4857 ft.",
+      "gain": "1800 ft."
     },
-    {
-      "elevation": {
-        "Highest Point": "120 ft.",
-        "Gain": "120 ft."
-      },
-      "name": "Trail 4",
-      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
-      "coordinates": {
-        "lat": "47.5890",
-        "lon": "-122.2270"
-      },
-      "length": "3.0 miles",
-      "requiredPass": "None",
-      "features": [
-        "Wildflowers/Meadows",
-        "Dogs allowed on leash",
-        "Good for kids",
-        "Lakes",
-        "Fall foliage",
-        "Coast"
-      ]
+    "name": "Gem Lake",
+    "url": "http://www.wta.org/go-hiking/hikes/gem-lake",
+    "coordinates": {
+      "lat": "47.4453",
+      "lon": "-121.4235"
     },
-    {
-      "elevation": {
-        "Highest Point": "120 ft.",
-        "Gain": "120 ft."
-      },
-      "name": "Trail 4",
-      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
-      "coordinates": {
-        "lat": "47.5890",
-        "lon": "-122.2270"
-      },
-      "length": "3.0 miles",
-      "requiredPass": "None",
-      "features": [
-        "Wildflowers/Meadows",
-        "Dogs allowed on leash",
-        "Good for kids",
-        "Lakes",
-        "Fall foliage",
-        "Coast"
-      ]
+    "length": "10.0 miles",
+    "requiredPass": "Northwest Forest Pass",
+    "description": "Gem Lake is nestled at the foot of Wright Mountain and is about two miles beyond the trail junction at Rock Creek trail #1013.1 that intersects with the Snow Lake trail starting at Alpental. Beautiful colors surround the lake in autumn as do the many climbable peaks in the area. If you're coming from Snow Lake, follow the Main Trail (there are signs) all the way around the lake. Eventually, you'll see the sign for Gem Lake where you take a left and continue past a couple more views of Snow Lake, including over a log bridge. The trail takes you up again for about a mile, through another rock field and some mountain meadows until you reach Gem Lake, which rests at a higher elevation than it's much larger neighbor, Snow Lake",
+    "features": [
+      "Wildflowers/Meadows",
+      "Mountain views",
+      "Dogs allowed on leash",
+      "Good for kids",
+      "Lakes",
+      "Fall foliage"
+    ]
+  },
+  {
+    "elevation": {
+      "highestPoint": "3780 ft.",
+      "gain": "1220 ft."
     },
-    {
-      "elevation": {
-        "Highest Point": "120 ft.",
-        "Gain": "120 ft."
-      },
-      "name": "Trail 4",
-      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
-      "coordinates": {
-        "lat": "47.5890",
-        "lon": "-122.2270"
-      },
-      "length": "3.0 miles",
-      "requiredPass": "None",
-      "features": [
-        "Wildflowers/Meadows",
-        "Dogs allowed on leash",
-        "Good for kids",
-        "Lakes",
-        "Fall foliage",
-        "Coast"
-      ]
+    "name": "Talapus and Olallie Lakes",
+    "url": "http://www.wta.org/go-hiking/hikes/talapus-lake",
+    "coordinates": {
+      "lat": "47.4007",
+      "lon": "-121.5190"
     },
-    {
-      "elevation": {
-        "Highest Point": "120 ft.",
-        "Gain": "120 ft."
-      },
-      "name": "Trail 4",
-      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
-      "coordinates": {
-        "lat": "47.5890",
-        "lon": "-122.2270"
-      },
-      "length": "3.0 miles",
-      "requiredPass": "None",
-      "features": [
-        "Wildflowers/Meadows",
-        "Dogs allowed on leash",
-        "Good for kids",
-        "Lakes",
-        "Fall foliage",
-        "Coast"
-      ]
+    "length": "6.2 miles",
+    "requiredPass": "Northwest Forest Pass",
+    "description": " If you're coming from Snow Lake, follow the Main Trail (there are signs) all the way around the lake. Eventually, you'll see the sign for Gem Lake where you take a left and continue past a couple more views of Snow Lake, including over a log bridge. The trail takes you up again for about a mile, through another rock field and some mountain meadows until you reach Gem Lake, which rests at a higher elevation than it's much larger neighbor, Snow Lake.",
+    "features": [
+      "Mountain views",
+      "Wildlife",
+      "Dogs allowed on leash",
+      "Old growth",
+      "Good for kids",
+      "Lakes",
+      "Fall foliage"
+    ]
+  },
+  {
+    "elevation": {
+      "highestPoint": "6856 ft.",
+      "gain": "2900 ft."
     },
-    {
-      "elevation": {
-        "Highest Point": "120 ft.",
-        "Gain": "120 ft."
-      },
-      "name": "Trail 4",
-      "url": "http://www.wta.org/go-hiking/hikes/luther-burbank-park",
-      "coordinates": {
-        "lat": "47.5890",
-        "lon": "-122.2270"
-      },
-      "length": "3.0 miles",
-      "requiredPass": "None",
-      "features": [
-        "Wildflowers/Meadows",
-        "Dogs allowed on leash",
-        "Good for kids",
-        "Lakes",
-        "Fall foliage",
-        "Coast"
-      ]
-    }
+    "name": "Norse Peak",
+    "url": "http://www.wta.org/go-hiking/hikes/norse-peak",
+    "coordinates": {
+      "lat": "46.9644",
+      "lon": "-121.4829"
+    },
+    "length": "10.0 miles",
+    "requiredPass": "Northwest Forest Pass",
+    "description": "Norse Peak Wilderness is a 52,315-acre designated wilderness area located in central Washington in the United States. It protects the portion of the Cascade Range north of Chinook Pass, south of Naches Pass, and east of Mount Rainier National Park. It is bordered by the William O. Douglas Wilderness to the south.",
+    "features": [
+      "Wildflowers/Meadows",
+      "Mountain views",
+      "Wildlife",
+      "Summits",
+      "Dogs allowed on leash"
+    ]
+  },
+  {
+    "elevation": {
+      "highestPoint": "4600 ft.",
+      "gain": "1600 ft."
+    },
+    "name": "Rachel Lake",
+    "url": "http://www.wta.org/go-hiking/hikes/rachel-lake",
+    "coordinates": {
+      "lat": "47.4012",
+      "lon": "-121.2848"
+    },
+    "length": "8.0 miles",
+    "requiredPass": "Northwest Forest Pass",
+    "description": "From Rachel Lake you can access further adventures at Rampart Lakes, Lila Lakes and Alta Peak. This hike is a popular weekend overnight destination; so don’t expect to be by yourself in high season.The trail starts off heading uphill before you cross into the wilderness boundary. Some roots and rocks will be present, but it's just enough to get you warmed up. Once you cross the boundary into the Alpine Lakes Wilderness, the trail grade eases. You will cross numerous small feeder streams as you wind your way up Box Canyon. The trail alternates between sections of old-growth, primarily douglas fir and hemlock, and brushy avalanche meadows, where the trail is crowded by salmonberry, sword ferns and devil's club. If you hike this section after an overnight rain or a dewy morning, prepare to get your legs more than a little damp.",
+    "features": [
+      "Ridges/passes",
+      "Lakes",
+      "Wildflowers/Meadows",
+      "Mountain views",
+      "Dogs allowed on leash",
+      "Established campsites",
+      "Waterfalls",
+      "Old growth",
+      "Fall foliage"
+    ]
+  },
+  {
+    "elevation": {
+      "highestPoint": "4600 ft.",
+      "gain": "3300 ft."
+    },
+    "name": "Blanca Lake",
+    "url": "http://www.wta.org/go-hiking/hikes/blanca-lake",
+    "coordinates": {
+      "lat": "47.9154",
+      "lon": "-121.3124"
+    },
+    "length": "7.5 miles",
+    "requiredPass": "Northwest Forest Pass",
+    "description": "Visit one of the most striking lakes in the Henry Jackson wilderness. The vibrant blue of the glacier-fed lake provides the perfect rest stop for hikers who have braved the thirty-odd steep switchbacks that lead to the lake. The trail starts in cool second growth forest, but the trees are quite sizable. In the fall, the squirrels roughhouse in the trees high above your head. Occasionally they drop gigantic pinecones from high above, and while the resulting crash is startling, it is fun to watch.",
+    "features": [
+      "Mountain views",
+      "Dogs allowed on leash",
+      "Established campsites",
+      "Waterfalls",
+      "Old growth",
+      "Summits",
+      "Lakes"
+    ]
+  },
+  {
+    "elevation": {
+      "highestPoint": "6089 ft.",
+      "gain": "1800 ft."
+    },
+    "name": "Bearhead Mountain",
+    "url": "http://www.wta.org/go-hiking/hikes/bearhead",
+    "coordinates": {
+      "lat": "47.0314",
+      "lon": "-121.8257"
+    },
+    "length": "6.0 miles",
+    "requiredPass": "Northwest Forest Pass",
+    "description": "Bearhead Mountain is a moderate, well-marked trail through the forest that carries you to an old fire lookout site with a bold and brassy Rainier view. Start your hike from the shared trailhead with the Summit Lake Trail. This somewhat rough and rocky section of the trail continues for a little less than a mile before arriving at a junction at Twin Lake. Here you can bear left for Summit Lake or right for Bearhead Mountain. Bearing right, continue on trail 1179 along the western edge of Bearhead Mountain.",
+    "features": [
+      "Wildflowers/Meadows",
+      "Mountain views",
+      "Dogs allowed on leash",
+      "Ridges/passes",
+      "Old growth",
+      "Summits"
+    ]
+  },
+  {
+    "elevation": {
+      "highestPoint": "5580 ft.",
+      "gain": "2280 ft."
+    },
+    "name": "Colchuck Lake",
+    "url": "http://www.wta.org/go-hiking/hikes/colchuck-lake",
+    "coordinates": {
+      "lat": "47.5277",
+      "lon": "-120.8210"
+    },
+    "length": "8.0 miles",
+    "requiredPass": "Northwest Forest Pass",
+    "description": "The first time you round the corner and come out of the trees at Colchuck Lake is something of a religious experience. Suddenly, laid out beneath your feet are the icy waters of the lake — deep blue in the shade, bright aquamarine in sunlight — while high above you at the far end of the lake, the twin spires of Dragontail and Colchuck Peaks seem to crowd out the very sky. While the final ascent to the lake is steep and rough in places, Colchuck’s overall elevation gain of 2,300 feet makes its spectacular scenery accessible to hikers of almost any ability. In summer, cars fill not only the trailhead parking lot, but the road leading to it. As if Colchuck Lake alone weren’t enough of a draw, it is one of the two gateways to the Enchantments, and the trailhead also accesses Stuart Lake, an easier and equally awesome destination.",
+    "features": [
+      "Mountain views",
+      "Established campsites",
+      "Summits",
+      "Lakes",
+      "Fall foliage",
+      "Rivers"
+    ]
+  },
+  {
+    "elevation": {
+      "highestPoint": "5850 ft.",
+      "gain": "600 ft."
+    },
+    "name": "Naches Peak Loop",
+    "url": "http://www.wta.org/go-hiking/hikes/naches-peak-loop",
+    "coordinates": {
+      "lat": "46.8674",
+      "lon": "-121.5176"
+    },
+    "length": "3.2 miles",
+    "requiredPass": "None",
+    "description": "This popular hike provides a range of alpine experiences in a short loop. Walk along a hillside above a small valley, pause at a viewpoint overlooking a lake, and stroll through grassy meadows with stunning views of Mount Rainier. In season enjoy an abundance of wildflowers or perhaps a handful of huckleberries.",
+    "features": [
+      "Wildflowers/Meadows",
+      "Mountain views",
+      "Good for kids",
+      "Lakes",
+      "Fall foliage"
+    ]
+  }
 ]

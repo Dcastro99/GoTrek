@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link as linkRouter} from 'react-router-dom';
+
 
 export const TrailsMainContainer = styled.div`
     width: 100%;
@@ -58,6 +60,25 @@ export const TrailRowContainer = styled.div`
     }
 `;
 
+export const Button = styled(linkRouter)`
+    cursor: pointer;
+    width: 50px;
+    background: #44733D;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    /* border: 2px solid black; */
+    
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.2s ease-in-out;
+        color: black;
+        background-color: #fff;
+    }
+`;
+
 export const TrailCard = styled.div`
     /* width: 25%; */
     height: 20rem;
@@ -77,16 +98,6 @@ export const TrailCard = styled.div`
     background: none;
     cursor: pointer;
     /* border: 1px solid black; */
-    
-    /* @media screen and (max-width: 1310px){
-        width: 40%;
-        min-width: 200px;
-        min-height: 300px;
-    }
-    @media screen and (max-width: 879px){
-        width: 40%;
-        min-width: 200px;
-    } */
     
     @media screen and (max-width: 768px){
         width: 70%;
@@ -116,6 +127,7 @@ export const CardFront = styled.div`
     border-radius: 15px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
     /* border: 3px solid red; */
+    overflow: hidden;
     
     &:hover {
         transform: rotateY(180deg);
@@ -179,8 +191,8 @@ export const TrailImageContainer = styled.div`
 export const TrailInformation = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: space-around;
     text-align: center;
     width: 100%;
     height: 100%;
@@ -191,10 +203,35 @@ export const TrailInformation = styled.div`
     text-align: center;
     /* border: 1px solid black; */
     h5 {
-        font-size: 1.1rem;
-    }
-    P {
         font-size: 1rem;
     }
+    P {
+        word-wrap: break-word;
+        font-size: 1rem;
+        max-height: 150px;
+        max-width: 100%;
+        /* height: 100px; */
+        /* white-space: no-wrap; */
+        /* border: 2px solid black; */
+        overflow-wrap: break-word;
+    }
+`;
+
+export const InformationRow = styled.div`
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    width: 100%;
+    /* border: 1px solid black; */
+    overflow-wrap: break-word;
+`;
+
+export const InformationColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
 `;
 

@@ -1,0 +1,17 @@
+.banner {
+    background-color: antiquewhite;
+    background-image: url(../images/trailDetail/banner-2.jpg);
+    background-position: center;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.banner-title {
+    color: white;
+    /* padding-top: 100px; */
+    /* padding-left: 20px; */
+    /* margin-top: 500px; */
+    /* border: 2px solid black; */
+
+}
