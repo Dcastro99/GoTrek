@@ -1,4 +1,4 @@
-#logOut {
+.logOut {
   border-radius: 50px;
   background: #44733D;
   color: #fff;
@@ -11,7 +11,7 @@
   text-decoration: none;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
-#logOut:hover {
+.logOut:hover {
   transition: all 0.2s ease-in-out;
   background: #fff;
   border: 1px solid lightgray;

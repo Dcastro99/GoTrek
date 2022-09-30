@@ -1,4 +1,4 @@
-#loginBtn {
+.loginBtn {
   
   /* width: 120px; */
   color:rgb(255, 255, 255);
@@ -9,7 +9,7 @@
   width:20%;
   border: 1px solid  rgb(58, 122, 35);
 }
-#button:hover {
+.loginBtn:hover {
   transition: all 0.2s ease-in-out;
   background: #fff;
   border: 1px solid rgb(58, 122, 35);
