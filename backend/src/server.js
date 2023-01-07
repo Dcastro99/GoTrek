@@ -161,8 +161,9 @@ async function handlePostUser(req, res) {
     if (!checkUser) {
       res.status(200).send('user created!')
       const newUser = await User.create({ ...req.body, username: req.body.user.name, email: req.body.user.email })
+      console.log('user created!', newUser);
     } else {
-      res.status(500).send('user already exists!!');
+      res.status(200).send('user already exists!!');
     }
   } catch (e) {
     res.status(500).send('server error');
