@@ -10,9 +10,7 @@ import ProfilePage from './pages/ProfilePage.js';
 import TrailDetailPage from './pages/TrailDetailPage.js';
 import HomePage from './pages/HomePage';
 import Weather from './components/Weather/src/Weather';
-import './assets/styles/App.css';
 import Trails from '../../frontend/src/components/TrailCard'
-
 import Chat from '../src/components/Socket-io/index'
 import './assets/styles/App.css'
 
@@ -75,7 +73,7 @@ class App extends React.Component {
               <Route exact path='/explore/trail/:id' element={< TrailDetailPage auth0={this.props.auth0} />} />
               <Route exact path='/profile' element={< ProfilePage auth0={this.props.auth0} />} />
               {/* <Route exact path='/trail' element={< TrailDetailPage auth0={this.props.auth0} />} /> */}
-              <Route exact path='/trail' element={< TrailDetailPage auth0={this.props.auth0} />}/>
+              <Route exact path='/trail' element={< TrailDetailPage auth0={this.props.auth0} />} />
               <Route exact path='/trail/:id' element={< TrailDetailPage auth0={this.props.auth0} />} />
               <Route exact path='/chat' element={< Chat auth0={this.props.auth0} />} />
             </>
