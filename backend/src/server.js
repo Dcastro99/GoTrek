@@ -71,11 +71,11 @@ app.use(verifyUser);
 //TRAIL path
 app.get('/trails/:id', handleGetOneTrail)
 
+app.post('/user', handlePostUser);
 // dev Paths
 // app.get('/userDev', handleGetUserDev);
 // app.put('/dev/:id', handleUpdateDev);
 // app.get('/user', handleGetUser);
-app.post('/user', handlePostUser);
 app.post('/review', handlePostreviews);
 
 
@@ -151,11 +151,11 @@ async function handleGetOneTrail(req, res) {
 //     res.status(400).send('Could not find users');
 //   }
 // }
-
+//
 ////>>>>>>>>>>>>>>>    USER      >>>>>>>>>>>>>////
 
 async function handlePostUser(req, res) {
-
+  console.log('ooookkkaaayyy', req.body)
   try {
     const checkUser = await User.findOne({ ...req.body, email: req.body.user.email })
     console.log('user created!', checkUser);
